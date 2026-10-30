@@ -1,0 +1,2 @@
+2026-10-30T23:11:29.469Z INFO  [input] input_script_loaded path="build\\login.txt" events=98 span_ms=600500 unmapped_chars=0
+2026-10-30T23:23:14.286Z INFO  [input] input_summary script="build\\login.txt" source=script events=98 fired=94 live=false live_keys=0 anti_afk_ms=60000 afk_pulses=10 sent=114 sent_key=80 sent_btn=28 sent_abs=6 sent_rel=0 sent_wheel=0 gated=0 build_fail=0 push_fail=0 late_skips=0 unmapped_chars=0
