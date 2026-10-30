@@ -1,0 +1,4 @@
+2026-10-29T20:04:40.044Z INFO  [media] video_stream_begin path="logs\\video.264" draw_index=0 requested="logs\\video.264"
+2026-10-29T20:07:10.764Z INFO  [media] audio_arm srtp_derived=1 armed=1 profile=1 pt=111 red_pt=63 file=1
+2026-10-29T20:07:51.344Z INFO  [media] audio_close pages=135 bytes=333274 packets=6374 payload_bytes=323210 srtp_fail=0 write_errors=0
+2026-10-29T20:07:51.392Z INFO  [media] video_stream_end path="logs\\video.264" draw_index=0 aus=668 bytes=3679210 file_bytes=3679210 write_errors=0

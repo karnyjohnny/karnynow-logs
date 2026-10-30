@@ -1,0 +1,4 @@
+2026-10-27T21:31:11.628Z INFO  [app] process_start build=unknown version=0.0.0 pid=6752
+2026-10-28T08:44:05.411Z INFO  [app] process_start build=unknown version=0.0.0 pid=2500
+2026-10-28T08:44:06.140Z ERROR [app] operation_failed op=session.cm code=E_SESSION_CM_CREATE reason="POST v2/session did not return a usable session" next_action="check the account/token/entitlements; the raw status is in this log (R7 measurement); cloud_status 11 = SESSION_LIMIT (an earlier session is still alive server-side)" amplified=true
+2026-10-28T08:46:36.693Z INFO  [app] process_start build=unknown version=0.0.0 pid=2888

@@ -1,0 +1,8 @@
+2026-10-29T13:49:25.403Z INFO  [media] audio_arm srtp_derived=1 armed=1 profile=1 pt=111 red_pt=63 file=1
+2026-10-29T13:49:53.085Z INFO  [media] audio_close pages=82 bytes=199510 packets=3814 payload_bytes=193437 srtp_fail=0 write_errors=0
+2026-10-29T13:55:48.069Z INFO  [media] audio_arm srtp_derived=1 armed=1 profile=1 pt=111 red_pt=63 file=1
+2026-10-29T13:56:13.623Z INFO  [media] audio_close pages=73 bytes=176601 packets=3376 payload_bytes=171209 srtp_fail=0 write_errors=0
+2026-10-29T14:02:03.449Z INFO  [media] audio_arm srtp_derived=1 armed=1 profile=1 pt=111 red_pt=63 file=1
+2026-10-29T14:02:50.507Z INFO  [media] audio_close pages=164 bytes=406292 packets=7771 payload_bytes=394048 srtp_fail=0 write_errors=0
+2026-10-29T14:09:09.030Z INFO  [media] audio_arm srtp_derived=1 armed=1 profile=1 pt=111 red_pt=63 file=1
+2026-10-29T14:11:22.548Z INFO  [media] audio_close pages=525 bytes=1309966 packets=25062 payload_bytes=1270684 srtp_fail=0 write_errors=0

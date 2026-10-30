@@ -1,0 +1,41 @@
+10000    mouse 1100 630 1280 720 
+11000    btn left down 
+11500    btn left up 
+70000   mouse 500 256 1280 720 
+70500   btn left down 
+71000   btn left up 
+72000   type login
+73000   mouse 500 340 1280 720 
+73500   btn left down 
+74000   btn left up 
+75000   type haslo 
+76000   mouse 625 425 1280 720 
+76500   btn left down 
+77000   btn left up 
+220000   mouse 1195 75 1280 720 
+221000   btn left down 
+221500   btn left up 
+330500   mouse 640 360 1280 720 
+332500   btn left down 
+333000   btn left up 
+# --- POCZ¥TEK PÊTLI CO 20 SEKUND ---
+420000   btn left down 
+420500   btn left up 
+440000   btn left down 
+440500   btn left up 
+460000   btn left down 
+460500   btn left up 
+480000   btn left down 
+480500   btn left up 
+500000   btn left down 
+505000   btn left up 
+520000   btn left down 
+520500   btn left up
+540000   btn left down 
+540500   btn left up 
+560000   btn left down 
+560500   btn left up 
+580000   btn left down 
+580500   btn left up 
+600000   btn left down 
+600500   btn left up

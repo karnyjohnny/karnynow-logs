@@ -1,0 +1,7 @@
+2026-10-28T17:16:24.920Z INFO  [app] process_start build=unknown version=0.0.0 pid=4100
+2026-10-28T17:19:16.915Z INFO  [app] process_start build=unknown version=0.0.0 pid=7164
+2026-10-28T17:19:17.532Z ERROR [app] operation_failed op=session.cm code=E_SESSION_CM_CREATE reason="POST v2/session did not return a usable session" next_action="check the account/token/entitlements; the raw status is in this log (R7 measurement); cloud_status 11 = SESSION_LIMIT (an earlier session is still alive server-side)" amplified=true
+2026-10-28T17:19:23.622Z INFO  [app] process_start build=unknown version=0.0.0 pid=2816
+2026-10-28T17:19:24.393Z ERROR [app] operation_failed op=session.cm code=E_SESSION_CM_CREATE reason="POST v2/session did not return a usable session" next_action="check the account/token/entitlements; the raw status is in this log (R7 measurement); cloud_status 11 = SESSION_LIMIT (an earlier session is still alive server-side)" amplified=true
+2026-10-28T17:22:37.780Z INFO  [app] process_start build=unknown version=0.0.0 pid=4544
+2026-10-28T17:22:56.079Z ERROR [app] operation_failed op=session.cm code=E_SESSION_NOT_READY reason="the session never reached ready state" next_action="queue position/seat step lines above show where it stalled; entitlements/queue are server-side" amplified=true

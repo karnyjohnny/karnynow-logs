@@ -1,0 +1,2 @@
+2026-10-29T20:04:40.045Z INFO  [input] input_script_loaded path="build\\login.txt" events=80 span_ms=416000 unmapped_chars=0
+2026-10-29T20:07:51.373Z WARN  [input] input_summary script="build\\login.txt" source=script events=80 fired=0 live=false live_keys=0 anti_afk_ms=0 afk_pulses=0 sent=0 sent_key=0 sent_btn=0 sent_abs=0 sent_rel=0 sent_wheel=0 gated=0 build_fail=0 push_fail=0 late_skips=0 unmapped_chars=0 note="input was armed but nothing flew: gated>0 means the activation chain never latched enable-input(true); gated==0 means the media loop never ticked"

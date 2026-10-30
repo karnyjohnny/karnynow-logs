@@ -1,0 +1,5 @@
+2026-10-28T21:46:30.378Z INFO  [app] process_start build=unknown version=0.0.0 pid=3924
+2026-10-28T21:49:39.063Z ERROR [app] operation_failed op=session.media code=E_SESSION_NO_FRAMES reason="media arrived but no access unit completed (SRTP material? vps? drops map tells)" next_action="the handoff line + drops map + wire mirror in the log dir are the R7/R32 evidence" amplified=true
+2026-10-28T21:50:11.061Z INFO  [app] process_start build=unknown version=0.0.0 pid=3924
+2026-10-28T21:58:36.583Z ERROR [app] operation_failed op=session.media code=E_SESSION_NO_FRAMES reason="media arrived but no access unit completed (SRTP material? vps? drops map tells)" next_action="the handoff line + drops map + wire mirror in the log dir are the R7/R32 evidence" amplified=true
+2026-10-28T21:59:08.485Z INFO  [app] process_start build=unknown version=0.0.0 pid=3924

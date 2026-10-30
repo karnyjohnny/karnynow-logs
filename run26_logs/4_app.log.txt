@@ -1,0 +1,10 @@
+2026-10-28T19:30:46.895Z INFO  [app] process_start build=unknown version=0.0.0 pid=6768
+2026-10-28T19:33:39.622Z ERROR [app] operation_failed op=session.media code=E_SESSION_NO_FRAMES reason="media arrived but no access unit completed (SRTP material? vps? drops map tells)" next_action="the handoff line + drops map + wire mirror in the log dir are the R7/R32 evidence" amplified=true
+2026-10-28T19:34:12.190Z INFO  [app] process_start build=unknown version=0.0.0 pid=6768
+2026-10-28T19:35:15.530Z ERROR [app] operation_failed op=session.cm code=E_SESSION_CM_CREATE reason="POST v2/session did not return a usable session" next_action="check the account/token/entitlements; the raw status is in this log (R7 measurement); cloud_status 11 = SESSION_LIMIT (an earlier session is still alive server-side)" amplified=true
+2026-10-28T19:35:45.643Z INFO  [app] process_start build=unknown version=0.0.0 pid=6768
+2026-10-28T19:35:46.307Z ERROR [app] operation_failed op=session.cm code=E_SESSION_CM_CREATE reason="POST v2/session did not return a usable session" next_action="check the account/token/entitlements; the raw status is in this log (R7 measurement); cloud_status 11 = SESSION_LIMIT (an earlier session is still alive server-side)" amplified=true
+2026-10-28T19:36:16.451Z INFO  [app] process_start build=unknown version=0.0.0 pid=6768
+2026-10-28T19:39:27.891Z ERROR [app] operation_failed op=session.media code=E_SESSION_NO_FRAMES reason="media arrived but no access unit completed (SRTP material? vps? drops map tells)" next_action="the handoff line + drops map + wire mirror in the log dir are the R7/R32 evidence" amplified=true
+2026-10-28T19:40:00.153Z INFO  [app] process_start build=unknown version=0.0.0 pid=6768
+2026-10-28T19:41:03.075Z ERROR [app] operation_failed op=session.cm code=E_SESSION_CM_CREATE reason="POST v2/session did not return a usable session" next_action="check the account/token/entitlements; the raw status is in this log (R7 measurement); cloud_status 11 = SESSION_LIMIT (an earlier session is still alive server-side)" amplified=true

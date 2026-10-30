@@ -1,0 +1,589 @@
+T10 build+test+selftests — 2026-10-28 17:13:01
+repo root: C:\Users\KarnyJohnny\Desktop\KarnyNow
+
+=== required source dependencies ===
+PASS third_party/tiny-aes-c/aes.c already present and verified
+PASS third_party/tiny-aes-c/aes.h already present and verified
+PASS third_party/crypto-algorithms-sha1/sha1.c already present and verified
+PASS third_party/crypto-algorithms-sha1/sha1.h already present and verified
+PASS TLS backend is supported (mbedtls)
+PASS mbedTLS source version is 3.6.0
+PASS usrsctp source already present
+
+=== toolchain ===
+
+$ C:\Python\Python38\python.exe --version
+Python 3.8.20
+[rc=0 in 0.0s]
+
+$ cmake --version
+cmake version 4.4.3
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+[rc=0 in 0.2s]
+
+$ ninja --version
+1.13.2
+[rc=0 in 0.1s]
+
+$ gcc --version
+gcc (GCC) 16.2.0
+Copyright (C) 2026 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+[rc=0 in 0.1s]
+
+=== build ===
+TLS backend: mbedtls
+ffmpeg dev prefix: C:\Users\KarnyJohnny\Desktop\KarnyNow\build\ffmpeg (FOUND)
+
+$ cmake --fresh -G Ninja -B build -DCMAKE_BUILD_TYPE=Release -DKN_TLS_BACKEND=mbedtls -DKN_FFMPEG_PREFIX=C:\Users\KarnyJohnny\Desktop\KarnyNow\build\ffmpeg
+-- The C compiler identification is GNU 16.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Programy/w64devkit/bin/cc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+CMake Warning (deprecated) at third_party/mbedtls/CMakeLists.txt:21 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- Found Python3: C:/Python/Python38/python.exe (found version "3.8.20") found components: Interpreter
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- FFmpeg: enabled from C:/Users/KarnyJohnny/Desktop/KarnyNow/build/ffmpeg
+-- Looking for include file sys/queue.h
+-- Looking for include file sys/queue.h - not found
+-- Looking for include files sys/socket.h, linux/if_addr.h
+-- Looking for include files sys/socket.h, linux/if_addr.h - not found
+-- Looking for include files sys/socket.h, linux/rtnetlink.h
+-- Looking for include files sys/socket.h, linux/rtnetlink.h - not found
+-- Looking for 4 include files sys/types.h, ..., netinet/ip_icmp.h
+-- Looking for 4 include files sys/types.h, ..., netinet/ip_icmp.h - not found
+-- Looking for 3 include files sys/types.h, ..., net/route.h
+-- Looking for 3 include files sys/types.h, ..., net/route.h - not found
+-- Looking for include file stdatomic.h
+-- Looking for include file stdatomic.h - found
+-- Looking for usrsctp.h
+-- Looking for usrsctp.h - found
+-- Performing Test have_sa_len
+-- Performing Test have_sa_len - Failed
+-- Performing Test have_sin_len
+-- Performing Test have_sin_len - Failed
+-- Performing Test have_sin6_len
+-- Performing Test have_sin6_len - Failed
+-- Performing Test have_sconn_len
+-- Performing Test have_sconn_len - Failed
+-- Performing Test has_wfloat_equal
+-- Performing Test has_wfloat_equal - Success
+-- Performing Test has_wshadow
+-- Performing Test has_wshadow - Success
+-- Performing Test has_wpointer_aritih
+-- Performing Test has_wpointer_aritih - Success
+-- Performing Test has_wunreachable_code
+-- Performing Test has_wunreachable_code - Success
+-- Performing Test has_winit_self
+-- Performing Test has_winit_self - Success
+-- Performing Test has_wno_unused_function
+-- Performing Test has_wno_unused_function - Success
+-- Performing Test has_wno_unused_parameter
+-- Performing Test has_wno_unused_parameter - Success
+-- Performing Test has_wno_unreachable_code
+-- Performing Test has_wno_unreachable_code - Success
+-- Performing Test has_wstrict_prototypes
+-- Performing Test has_wstrict_prototypes - Success
+-- Compiler flags (CMAKE_C_FLAGS):  -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Wunreachable-code -Winit-self -Wno-unused-function -Wno-unused-parameter -Wno-unreachable-code -Wstrict-prototypes
+-- Performing Test has_wno_address_of_packed_member
+-- Performing Test has_wno_address_of_packed_member - Success
+-- Performing Test has_wno_deprecated_declarations
+-- Performing Test has_wno_deprecated_declarations - Success
+-- link library: ws2_32
+-- kn_sctp: usrsctp backend ENABLED (third_party/usrsctp)
+-- FFmpeg: no bin/*.dll — static build, nothing to copy
+-- Configuring done (22.2s)
+-- Generating done (0.5s)
+-- Build files have been written to: C:/Users/KarnyJohnny/Desktop/KarnyNow/build
+[rc=0 in 23.0s]
+PASS cmake configure
+
+$ cmake --build build
+[1/210] Building C object third_party/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/library/Hacl_Curve25519_joined.c.obj
+[2/210] Building C object third_party/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/library/x25519.c.obj
+[3/210] Building C object third_party/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/library/everest.c.obj
+[4/210] Building C object third_party/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.obj
+[5/210] Building C object third_party/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.obj
+[6/210] Linking C static library third_party\mbedtls\3rdparty\p256-m\libp256m.a
+[7/210] Linking C static library third_party\mbedtls\3rdparty\everest\libeverest.a
+[8/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/aesce.c.obj
+[9/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/aesni.c.obj
+[10/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/asn1parse.c.obj
+[11/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/asn1write.c.obj
+[12/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/aria.c.obj
+[13/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/aes.c.obj
+[14/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/base64.c.obj
+[15/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum_mod.c.obj
+[16/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum_core.c.obj
+[17/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/block_cipher.c.obj
+[18/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum_mod_raw.c.obj
+[19/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/ccm.c.obj
+[20/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum.c.obj
+[21/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/camellia.c.obj
+[22/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/chacha20.c.obj
+[23/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/chachapoly.c.obj
+[24/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/constant_time.c.obj
+[25/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/cipher.c.obj
+[26/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/cipher_wrap.c.obj
+[27/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/ctr_drbg.c.obj
+[28/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/cmac.c.obj
+[29/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/des.c.obj
+[30/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/dhm.c.obj
+[31/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecdh.c.obj
+[32/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecdsa.c.obj
+[33/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecjpake.c.obj
+[34/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecp_curves_new.c.obj
+[35/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/entropy.c.obj
+[36/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecp.c.obj
+[37/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecp_curves.c.obj
+[38/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/error.c.obj
+[39/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/hkdf.c.obj
+[40/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/gcm.c.obj
+[41/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/hmac_drbg.c.obj
+[42/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/entropy_poll.c.obj
+[43/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/lms.c.obj
+[44/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/lmots.c.obj
+[45/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/md5.c.obj
+[46/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/md.c.obj
+[47/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/memory_buffer_alloc.c.obj
+[48/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/nist_kw.c.obj
+[49/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/padlock.c.obj
+[50/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/pem.c.obj
+[51/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/oid.c.obj
+[52/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/pk_ecc.c.obj
+[53/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/pk.c.obj
+[54/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/pk_wrap.c.obj
+[55/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkcs12.c.obj
+[56/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkparse.c.obj
+[57/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkcs5.c.obj
+[58/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/platform.c.obj
+[59/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkwrite.c.obj
+[60/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/poly1305.c.obj
+[61/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_aead.c.obj
+[62/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/platform_util.c.obj
+[63/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_cipher.c.obj
+[64/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_driver_wrappers_no_static.c.obj
+[65/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_client.c.obj
+[66/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_ecp.c.obj
+[67/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_ffdh.c.obj
+[68/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_mac.c.obj
+[69/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_hash.c.obj
+[70/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_pake.c.obj
+[71/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto.c.obj
+[72/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_rsa.c.obj
+[73/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_se.c.obj
+[74/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_slot_management.c.obj
+[75/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_storage.c.obj
+[76/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_util.c.obj
+[77/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/ripemd160.c.obj
+[78/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_its_file.c.obj
+[79/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/rsa_alt_helpers.c.obj
+[80/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/rsa.c.obj
+[81/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha1.c.obj
+[82/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha512.c.obj
+[83/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha256.c.obj
+[84/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha3.c.obj
+[85/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/threading.c.obj
+[86/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/version.c.obj
+[87/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/version_features.c.obj
+[88/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedx509.dir/pkcs7.c.obj
+[89/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedx509.dir/x509_create.c.obj
+[90/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedcrypto.dir/timing.c.obj
+[91/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedx509.dir/x509.c.obj
+[92/210] Linking C static library third_party\mbedtls\library\libmbedcrypto.a
+[93/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedx509.dir/x509_csr.c.obj
+[94/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedx509.dir/x509write.c.obj
+[95/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crt.c.obj
+[96/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crl.c.obj
+[97/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_crt.c.obj
+[98/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedtls.dir/debug.c.obj
+[99/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_csr.c.obj
+[100/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedtls.dir/mps_reader.c.obj
+[101/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedtls.dir/mps_trace.c.obj
+[102/210] Linking C static library third_party\mbedtls\library\libmbedx509.a
+[103/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cache.c.obj
+[104/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.obj
+[105/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cookie.c.obj
+[106/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_client.c.obj
+[107/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_debug_helpers_generated.c.obj
+[108/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ticket.c.obj
+[109/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedtls.dir/net_sockets.c.obj
+[110/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_msg.c.obj
+[111/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls12_client.c.obj
+[112/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls.c.obj
+[113/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_server.c.obj
+[114/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls12_server.c.obj
+[115/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.obj
+[116/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_client.c.obj
+[117/210] Building C object third_party/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_generic.c.obj
+[118/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/netinet/sctp_bsd_addr.c.obj
+[119/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/netinet/sctp_asconf.c.obj
+[120/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/netinet/sctp_auth.c.obj
+[121/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/netinet/sctp_callout.c.obj
+[122/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/netinet/sctp_crc32.c.obj
+[123/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/netinet/sctp_cc_functions.c.obj
+[124/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/netinet/sctp_indata.c.obj
+[125/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/netinet/sctp_input.c.obj
+[126/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/netinet/sctp_peeloff.c.obj
+[127/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/netinet/sctp_output.c.obj
+[128/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/netinet/sctp_pcb.c.obj
+[129/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/netinet/sctp_sha1.c.obj
+[130/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/netinet/sctp_ss_functions.c.obj
+[131/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/netinet/sctp_sysctl.c.obj
+[132/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/netinet/sctp_timer.c.obj
+[133/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/netinet/sctp_userspace.c.obj
+[134/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/netinet6/sctp6_usrreq.c.obj
+[135/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/netinet/sctputil.c.obj
+[136/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/netinet/sctp_usrreq.c.obj
+[137/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/user_environment.c.obj
+[138/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/user_mbuf.c.obj
+[139/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/user_recv_thread.c.obj
+[140/210] Building C object CMakeFiles/kncore.dir/streamer/src/knring.c.obj
+[141/210] Building C object CMakeFiles/kncore.dir/streamer/src/knfec.c.obj
+[142/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_aes.c.obj
+[143/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_sha1.c.obj
+[144/210] Building C object third_party/usrsctp/usrsctplib/CMakeFiles/usrsctp.dir/user_socket.c.obj
+[145/210] Building C object CMakeFiles/kncore.dir/streamer/src/knsrtp.c.obj
+[146/210] Building C object CMakeFiles/kncore.dir/streamer/src/knlog.c.obj
+[147/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_decode.c.obj
+[148/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_diag.c.obj
+[149/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_gs.c.obj
+[150/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_selftest.c.obj
+[151/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_perf.c.obj
+[152/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_net.c.obj
+[153/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_d3d.c.obj
+[154/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_audio.c.obj
+[155/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_sock.c.obj
+[156/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_rx.c.obj
+[157/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_json.c.obj
+[158/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_rtsp.c.obj
+[159/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_ws.c.obj
+[160/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_http.c.obj
+[161/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_dtls.c.obj
+[162/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_cm.c.obj
+[163/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_cert.c.obj
+[164/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_input.c.obj
+[165/210] Building C object CMakeFiles/kncore.dir/third_party/tiny-aes-c/aes.c.obj
+[166/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_bw.c.obj
+[167/210] Building C object CMakeFiles/kncore.dir/third_party/crypto-algorithms-sha1/sha1.c.obj
+[168/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_sctp.c.obj
+[169/210] Linking C static library third_party\mbedtls\library\libmbedtls.a
+[170/210] Linking C static library third_party\usrsctp\usrsctplib\libusrsctp.a
+[171/210] Building C object CMakeFiles/test_knring.dir/streamer/tests/test_knring.c.obj
+[172/210] Building C object CMakeFiles/test_knlog.dir/streamer/tests/test_knlog.c.obj
+[173/210] Building C object CMakeFiles/kncore.dir/streamer/src/kn_net_mbedtls.c.obj
+[174/210] Building C object CMakeFiles/test_knfec.dir/streamer/tests/test_knfec.c.obj
+[175/210] Building C object CMakeFiles/test_knsrtp.dir/streamer/tests/test_knsrtp.c.obj
+[176/210] Linking C static library libkncore.a
+[177/210] Building C object CMakeFiles/test_kngs.dir/streamer/tests/test_kngs.c.obj
+[178/210] Building C object CMakeFiles/test_knselftest.dir/streamer/tests/test_knselftest.c.obj
+[179/210] Building C object CMakeFiles/test_knaudio.dir/streamer/tests/test_knaudio.c.obj
+[180/210] Building C object CMakeFiles/test_kndiag.dir/streamer/tests/test_kndiag.c.obj
+[181/210] Building C object CMakeFiles/test_knws.dir/streamer/tests/test_knws.c.obj
+[182/210] Building C object CMakeFiles/test_knrx.dir/streamer/tests/test_knrx.c.obj
+[183/210] Building C object CMakeFiles/test_knrtsp.dir/streamer/tests/test_knrtsp.c.obj
+[184/210] Building C object CMakeFiles/test_knsock.dir/streamer/tests/test_knsock.c.obj
+[185/210] Building C object CMakeFiles/test_kncert.dir/streamer/tests/test_kncert.c.obj
+[186/210] Building C object CMakeFiles/test_kncm.dir/streamer/tests/test_kncm.c.obj
+[187/210] Building C object CMakeFiles/test_kndtls.dir/streamer/tests/test_kndtls.c.obj
+[188/210] Building C object CMakeFiles/test_knsctp.dir/streamer/tests/test_knsctp.c.obj
+[189/210] Building C object CMakeFiles/test_kninput.dir/streamer/tests/test_kninput.c.obj
+[190/210] Building C object CMakeFiles/test_knbw.dir/streamer/tests/test_knbw.c.obj
+[191/210] Linking C executable test_knring.exe
+[192/210] Linking C executable test_knlog.exe
+[193/210] Linking C executable test_knfec.exe
+[194/210] Linking C executable test_knsrtp.exe
+[195/210] Linking C executable test_kndiag.exe
+[196/210] Linking C executable test_kngs.exe
+[197/210] Linking C executable test_knaudio.exe
+[198/210] Linking C executable test_knrx.exe
+[199/210] Linking C executable test_knsock.exe
+[200/210] Linking C executable test_knws.exe
+[201/210] Linking C executable test_knrtsp.exe
+[202/210] Linking C executable test_kncm.exe
+[203/210] Linking C executable test_kncert.exe
+[204/210] Linking C executable test_kndtls.exe
+[205/210] Linking C executable test_knsctp.exe
+[206/210] Linking C executable test_kninput.exe
+[207/210] Linking C executable test_knbw.exe
+[208/210] Building C object CMakeFiles/knvstd.dir/streamer/src/knvstd_main.c.obj
+[209/210] Linking C executable test_knselftest.exe
+[210/210] Linking C executable knvstd.exe
+[rc=0 in 208.0s]
+PASS ninja build
+PASS zero compiler warnings (0 seen)
+PASS test_knfec.exe exists in build
+PASS test_knring.exe exists in build
+PASS test_knaudio.exe exists in build
+PASS test_kngs.exe exists in build
+PASS test_knselftest.exe exists in build
+PASS knvstd.exe exists in build
+PASS test_kndiag.exe exists in build
+PASS test_knlog.exe exists in build
+PASS test_knsrtp.exe exists in build
+no FFmpeg DLLs next to knvstd.exe — static build (D18): knvstd links lib/*.a directly, there is nothing to deploy (EXPECTED, not a warning)
+
+=== unit tests (on target) ===
+
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knlog.exe
+test_knlog: 105 checks, 0 failures -> PASS
+[rc=0 in 3.2s]
+PASS test_knlog -> PASS
+
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knring.exe
+test_knring: 34 checks, 0 failures -> PASS
+[rc=0 in 0.0s]
+PASS test_knring -> PASS
+
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knfec.exe
+  property round-trips executed: 200/200
+test_knfec: 125 checks, 0 failures -> PASS
+[rc=0 in 0.0s]
+PASS test_knfec -> PASS
+
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knsrtp.exe
+test_knsrtp: 77 checks, 0 failures -> PASS
+[rc=0 in 0.0s]
+PASS test_knsrtp -> PASS
+
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_kndiag.exe
+test_kndiag: 110 checks, 0 failures -> PASS
+[rc=0 in 0.7s]
+PASS test_kndiag -> PASS
+
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knselftest.exe
+test_knselftest: 116 checks, 0 failures -> PASS
+[rc=0 in 5.4s]
+PASS test_knselftest -> PASS
+
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_kngs.exe
+test_kngs: 125 checks, 0 failures -> PASS
+[rc=0 in 0.1s]
+PASS test_kngs -> PASS
+
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knaudio.exe
+test_knaudio: 22 checks, 0 failures -> PASS
+[rc=0 in 0.1s]
+PASS test_knaudio -> PASS
+
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knrx.exe
+== kn_rx KAT + property suite ==
+-- kat battery (shared with the rx.vectors self-test) --
+  scenarios passed: 31/31
+  kat battery: 153 checks, 0 failures; scenarios 31/31
+-- reorder units --
+-- properties --
+-- error paths --
+-- round XL feedback plane --
+-- round XLI recovery state machine --
+test_knrx: 243 checks, 0 failures -> PASS
+[rc=0 in 0.0s]
+PASS test_knrx -> PASS
+
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knsock.exe
+-- clock --
+-- ipv4 helpers --
+-- lifecycle --
+-- loopback round-trip --
+-- timeout path --
+-- max datagram (65507 B) --
+-- burst (backlog drain) --
+-- undersized recv buffer (PLATFORM DELTA) --
+-- bad arguments --
+-- connected UDP (peer filtering, --session media path) --
+-- STUN toolkit (round XXV KAT) --
+test_knsock: 103 checks, 0 failures -> PASS
+[rc=0 in 0.3s]
+PASS test_knsock -> PASS
+
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knws.exe
+-- base64 (RFC 4648 goldens) --
+-- accept (RFC 6455 golden) --
+-- CSPRNG --
+-- opening handshake --
+-- send framing (masked client frames) --
+-- receive framing --
+test_knws: 88 checks, 0 failures -> PASS
+[rc=0 in 0.0s]
+PASS test_knws -> PASS
+
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knrtsp.exe
+-- serialize --
+-- parse (reference fixtures :3443-3470) --
+-- SDP extraction --
+-- video peer + SRTP profile --
+-- SETUP URI ladder --
+-- DESCRIBE extraction --
+-- SETUP sweep --
+-- full OPTIONS->DESCRIBE->SETUP->ANNOUNCE->PLAY --
+-- big/split messages (round XXIV, R7 run-5 shape) --
+-- pre-PLAY ICE ladder (round XXV) --
+-- TEARDOWN mismatch skip --
+-- error paths --
+test_knrtsp: 150 checks, 0 failures -> PASS
+[rc=0 in 0.0s]
+PASS test_knrtsp -> PASS
+
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_kncm.exe
+-- kn_json --
+-- kn_http --
+-- kn_cm extract --
+-- kn_cm control base (R7 run-1 fix) --
+-- kn_cm body/headers --
+-- kn_cm networked create/poll (scripted server) --
+-- kn_cm cancel (DELETE v2/session/{id}) --
+test_kncm: 148 checks, 0 failures -> PASS
+[rc=0 in 0.0s]
+PASS test_kncm -> PASS
+
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_kncert.exe
+-- kn_cert real battery (mbedTLS) --
+test_kncert: 10 checks, 0 failures -> PASS
+[rc=0 in 0.1s]
+PASS test_kncert -> PASS
+
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_kndtls.exe
+-- kn_dtls demux predicate (looks_like_dtls, nvst.rs:6345) --
+-- kn_dtls real battery (mbedTLS, loopback UDP) --
+test_kndtls: 39 checks, 0 failures -> PASS
+[rc=0 in 3.2s]
+PASS test_kndtls -> PASS
+
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knsctp.exe
+-- DCEP goldens vs the independent Python reference --
+-- kn_sctp real battery (vendored usrsctp, AF_CONN) --
+test_knsctp: 35 checks, 0 failures -> PASS
+[rc=0 in 1.3s]
+PASS test_knsctp -> PASS
+
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_kninput.exe
+== test_kninput: the NVST control/input plane ==
+test_kninput: 548 checks, 0 failures -> PASS
+[rc=0 in 0.0s]
+PASS test_kninput -> PASS
+
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knbw.exe
+== test_knbw: bandwidth estimator + server-control decoder ==
+knbw: 387 checks, 0 failures -> PASS
+[rc=0 in 0.1s]
+PASS test_knbw -> PASS
+
+=== knvstd self-tests ===
+
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\knvstd.exe --list-selftests
+{"selftests":["fec.vectors","srtp.vectors","input.vectors","clock.resolution","console.host","d3d.formats","d3d.present","decode.synthetic","gs.parse","rx.vectors","sock.loopback","net.dns","net.tcp443","net.tls","tls.chain"],"count":15}
+[rc=0 in 0.7s]
+PASS registry lists 15 self-tests (12 from §7.9 + rx.vectors + sock.loopback + input.vectors)
+
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\knvstd.exe --selftest=d3d.present --log-dir=logs/t10
+{"generated_utc":"2026-10-28T16:17:09.180Z","count":1,"results":[{"name":"d3d.present","status":"ok","gated":true,"ms":221,"checks":11,"failures":0,"reason":"R25 milestone 0 OK: 1280x720 NV12 DEFAULT fill verified, StretchRect+Present x30, present mean 0.30 ms max 5.28 ms, fill mean 2.11 ms, pitch 1536","evidence":{"checks":11,"failures":0,"first_failure":"","ok":true,"iters":"30/30","pitch":1536,"video":"1280x720","screen":"1280x800","dest":"0,40,1280,760","fill_ms_mean":2.11,"fill_ms_max":28.07,"present_ms_mean":0.30,"present_ms_max":5.28,"filter":"linear","mismatches":0,"bytes_per_fill":1658880,"hrs":{"dev":"0x00000000","conv":"0x00000000","surf":"0x00000000","lock":"0x00000000","stretch":"0x00000000","present":"0x00000000","tcl":"0x00000000"},"seh":"0x00000000","seh_addr":"0x0000000000000000","degraded_latch":false}}],"truncated":false}
+[rc=0 in 0.6s]
+  milestone-0 reason: R25 milestone 0 OK: 1280x720 NV12 DEFAULT fill verified, StretchRect+Present x30, present mean 0.30 ms max 5.28 ms, fill mean 2.11 ms, pitch 1536
+PASS R25 milestone 0: d3d.present standalone (ok)
+
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\knvstd.exe --selftest=all --log-dir=logs/t10
+{"generated_utc":"2026-10-28T16:17:10.675Z","count":15,"results":[{"name":"fec.vectors","status":"ok","gated":true,"ms":0,"checks":88,"failures":0,"reason":"all 88 known-answer checks passed","evidence":{"checks":88,"failures":0,"first_failure":"","vectors":"knfec_kat_vectors.h (tools/fec_reference.py)"}},{"name":"srtp.vectors","status":"ok","gated":true,"ms":0,"checks":52,"failures":0,"reason":"all 52 known-answer checks passed","evidence":{"checks":52,"failures":0,"first_failure":"","replay_ops":96,"replay_mismatches":0}},{"name":"input.vectors","status":"ok","gated":true,"ms":0,"checks":50,"failures":0,"reason":"all 50 known-answer checks passed","evidence":{"checks":50,"failures":0,"first_failure":"","vectors":"kn_input_kat_vectors.h (tools/input_reference.py)","chain":8}},{"name":"clock.resolution","status":"ok","gated":true,"ms":18,"checks":3,"failures":0,"reason":"Sleep(1) mean 1.12 ms -> 1.00 ms after timeBeginPeriod(1); wall tick 1000 us -> 1001 us","evidence":{"checks":3,"failures":0,"first_failure":"","qpc_hz":1948310,"wall_tick_us_before":1000,"wall_tick_us_after":1001,"sleep1_ms_before":1.12,"sleep1_ms_after":1.00}},{"name":"console.host","status":"ok","gated":true,"ms":0,"checks":1,"failures":0,"reason":"ConEmu hook present (build 230724); ANSI not probeable (stdout redirected) — hook is the D1 evidence","evidence":{"checks":1,"failures":0,"first_failure":"","conemu_hk64":true,"conemu_hk32":false,"conemu_build":"230724","stdout_is_console":false,"vt_setconsolemode_ok":false,"vt_err":0,"attr_applied":"not_probed"}},{"name":"d3d.formats","status":"ok","gated":true,"ms":105,"checks":10,"failures":0,"reason":"D7 rung 1 available: NV12->X8R8G8B8 conversion ok, LINEAR caps, HAL+HWVP device ok; 1280x800@60 Hz; PCI 8086:2a42","evidence":{"checks":10,"failures":0,"first_failure":"","adapter":"8086:2a42","driver":"0x0008000f000a0b35","desc":"Intel(R) HD Graphics Family","mode":"1280x800@60","bb":"X8R8G8B8","modes":16,"hz60_at_res":1,"hwvp":"0x00000000","swvp":"0x00000000","fmt":{"nv12":1,"yuy2":1,"uyvy":1,"x8":1,"a8":1,"r5g6":1,"x1r5":0},"conv":{"nv12":1,"yuy2":1,"x8":1,"to_nv12":0},"srf_caps":"0x03000300","linear":1,"point":1,"imm":1,"one":1}},{"name":"d3d.present","status":"ok","gated":true,"ms":177,"checks":11,"failures":0,"reason":"R25 milestone 0 OK: 1280x720 NV12 DEFAULT fill verified, StretchRect+Present x30, present mean 0.29 ms max 5.09 ms, fill mean 2.11 ms, pitch 1536","evidence":{"checks":11,"failures":0,"first_failure":"","ok":true,"iters":"30/30","pitch":1536,"video":"1280x720","screen":"1280x800","dest":"0,40,1280,760","fill_ms_mean":2.11,"fill_ms_max":28.42,"present_ms_mean":0.29,"present_ms_max":5.09,"filter":"linear","mismatches":0,"bytes_per_fill":1658880,"hrs":{"dev":"0x00000000","conv":"0x00000000","surf":"0x00000000","lock":"0x00000000","stretch":"0x00000000","present":"0x00000000","tcl":"0x00000000"},"seh":"0x00000000","seh_addr":"0x0000000000000000","degraded_latch":false}},{"name":"decode.synthetic","status":"ok","gated":true,"ms":29,"checks":5,"failures":0,"reason":"60 frames 320x240 at 2727.3 fps, cpu 73% of one core, worst frame 1 ms (libavcodec 63.2.100 (threads=1))","evidence":{"backend":"libavcodec 63.2.100 (threads=1)","clip":"<embedded 42912 B>","rc":0,"frames":60,"failed":0,"cb_frames":60,"width":320,"height":240,"fps":2727.3,"cpu_pct_of_core":72.7,"decode_ms_max":1,"wall_ms":22}},{"name":"gs.parse","status":"ok","gated":true,"ms":0,"checks":78,"failures":0,"reason":"all 78 known-answer checks passed","evidence":{"checks":78,"failures":0,"first_failure":"","vectors":"kn_gs_kat_vectors.h (tools/gs_reference.py)","capture":"none (stage 2 records real dumps)"}},{"name":"rx.vectors","status":"ok","gated":true,"ms":2,"checks":153,"failures":0,"reason":"all 153 receive-pipeline checks passed (scenarios 31/31, srtp256/gcm verified)","evidence":{"checks":153,"failures":0,"first_failure":"","vectors":"kn_rx_kat_vectors.h (tools/rx_reference.py)","scenarios_passed":31,"scenarios_total":31,"srtp_backend":1}},{"name":"sock.loopback","status":"ok","gated":true,"ms":54,"checks":9,"failures":0,"reason":"UDP loopback OK: 64/64 datagrams byte-exact (burst 2 ms), timeout 49 ms, rcvbuf 262144 B applied (req 262144 B)","evidence":{"checks":9,"failures":0,"first_failure":"","burst_got":64,"burst_mismatch":0,"burst_ms":2,"timeout_ms":49,"rcvbuf_req":262144,"rcvbuf_act":262144,"port_a":63892,"port_b":63893}},{"name":"net.dns","status":"ok","gated":true,"ms":33,"checks":3,"failures":0,"reason":"3/3 hosts resolve; login.nvidia.com -> 15.236.196.144 (A=3, AAAA=0, 15 ms)","evidence":{"checks":3,"failures":0,"first_failure":"","hosts":[{"host":"login.nvidia.com","rc":0,"a":3,"aaaa":0,"v4":"15.236.196.144","ms":15},{"host":"prod.cloudmatchbeta.nvidiagrid.net","rc":0,"a":6,"aaaa":0,"v4":"80.250.98.39","ms":14},{"host":"stun.l.google.com","rc":0,"a":1,"aaaa":0,"v4":"74.125.250.129","ms":2}]}},{"name":"net.tcp443","status":"ok","gated":true,"ms":82,"checks":3,"failures":0,"reason":"TCP/443 open to 2/2 NVIDIA endpoints + baseline (login 13.37.58.205 in 43 ms)","evidence":{"checks":3,"failures":0,"first_failure":"","hosts":[{"host":"login.nvidia.com","rc":0,"wsa":0,"peer":"13.37.58.205","ms":43},{"host":"prod.cloudmatchbeta.nvidiagrid.net","rc":0,"wsa":0,"peer":"80.250.98.37","ms":12},{"host":"www.cloudflare.com","rc":0,"wsa":0,"peer":"104.16.123.96","ms":25}]}},{"name":"net.tls","status":"ok","gated":false,"ms":555,"checks":3,"failures":0,"reason":"mbedTLS TLS verified on all 3 hosts: login TLSv1 cipher 128-bit, leaf 'CN=login.nvidia.com'","evidence":{"checks":3,"failures":0,"first_failure":"","hosts":[{"host":"login.nvidia.com","rc":0,"sec":"0x00000000","proto":"TLSv1.2","cipher_bits":128,"leaf":"CN=login.nvidia.com"},{"host":"prod.cloudmatchbeta.nvidiagrid.net","rc":0,"sec":"0x00000000","proto":"TLSv1.2","cipher_bits":256,"leaf":"C=US, ST=California, L=Santa Cla"},{"host":"www.cloudflare.com","rc":0,"sec":"0x00000000","proto":"TLSv1.2","cipher_bits":256,"leaf":"CN=www.cloudflare.com"}]}},{"name":"tls.chain","status":"ok","gated":false,"ms":250,"checks":4,"failures":0,"reason":"login.nvidia.com chain clean: depth 3, root 'C=US, O=Amazon, CN=Amazon Root CA 1', trust 0x00000000, policy 0x00000000","evidence":{"checks":4,"failures":0,"first_failure":"","depth":3,"trust":"0x00000000","policy":"0x00000000","policy_at":[0,0],"chain":[{"i":0,"subject":"CN=login.nvidia.com","issuer":"C=US, O=Amazon, CN=Amazon RS","not_after":"2027-02-18","trust":"0x00000000"},{"i":1,"subject":"C=US, O=Amazon, CN=Amazon RS","issuer":"C=US, O=Amazon, CN=Amazon Ro","not_after":"2030-08-23","trust":"0x00000000"},{"i":2,"subject":"C=US, O=Amazon, CN=Amazon Ro","issuer":"C=US, ST=Arizona, L=Scottsda","not_after":"2037-12-31","trust":"0x00000000"}]}}],"truncated":false}
+[rc=0 in 1.4s]
+PASS --selftest=all exit 0 (gated policy) + JSON
+
+--- self-test verdicts ---
+  fec.vectors       ok          0ms  checks=88   all 88 known-answer checks passed
+  srtp.vectors      ok          0ms  checks=52   all 52 known-answer checks passed
+  input.vectors     ok          0ms  checks=50   all 50 known-answer checks passed
+  clock.resolution  ok         18ms  checks=3    Sleep(1) mean 1.12 ms -> 1.00 ms after timeBeginPeriod(1); wall tick 1000 us -> 
+  console.host      ok          0ms  checks=1    ConEmu hook present (build 230724); ANSI not probeable (stdout redirected) — hoo
+  d3d.formats       ok        105ms  checks=10   D7 rung 1 available: NV12->X8R8G8B8 conversion ok, LINEAR caps, HAL+HWVP device 
+  d3d.present       ok        177ms  checks=11   R25 milestone 0 OK: 1280x720 NV12 DEFAULT fill verified, StretchRect+Present x30
+  decode.synthetic  ok         29ms  checks=5    60 frames 320x240 at 2727.3 fps, cpu 73% of one core, worst frame 1 ms (libavcod
+  gs.parse          ok          0ms  checks=78   all 78 known-answer checks passed
+  rx.vectors        ok          2ms  checks=153  all 153 receive-pipeline checks passed (scenarios 31/31, srtp256/gcm verified)
+  sock.loopback     ok         54ms  checks=9    UDP loopback OK: 64/64 datagrams byte-exact (burst 2 ms), timeout 49 ms, rcvbuf 
+  net.dns           ok         33ms  checks=3    3/3 hosts resolve; login.nvidia.com -> 15.236.196.144 (A=3, AAAA=0, 15 ms)
+  net.tcp443        ok         82ms  checks=3    TCP/443 open to 2/2 NVIDIA endpoints + baseline (login 13.37.58.205 in 43 ms)
+  net.tls           ok        555ms  checks=3    mbedTLS TLS verified on all 3 hosts: login TLSv1 cipher 128-bit, leaf 'CN=login.
+  tls.chain         ok        250ms  checks=4    login.nvidia.com chain clean: depth 3, root 'C=US, O=Amazon, CN=Amazon Root CA 1
+PASS fec.vectors ok in the target binary
+PASS srtp.vectors ok in the target binary
+PASS gs.parse ok in the target binary
+PASS rx.vectors ok in the target binary
+PASS sock.loopback ok in the target binary
+PASS input.vectors ok in the target binary
+PASS clock.resolution executed on Win32 (status=ok)
+PASS console.host executed on Win32 (status=ok)
+PASS d3d.formats executed on Win32 (status=ok)
+PASS d3d.formats verdict usable (D7): ok
+  d3d.formats reason: D7 rung 1 available: NV12->X8R8G8B8 conversion ok, LINEAR caps, HAL+HWVP device ok; 1280x800@60 Hz; PCI 8086:2a42
+PASS d3d.present executed on Win32 (status=ok)
+PASS d3d.present verdict usable (D7): ok
+  d3d.present reason: R25 milestone 0 OK: 1280x720 NV12 DEFAULT fill verified, StretchRect+Present x30, present mean 0.29 ms max 5.09 ms, fill mean 2.11 ms, pitch 1536
+PASS console.host not failed (D1): ok
+PASS net.dns executed on Win32 (status=ok)
+  net.dns reason: 3/3 hosts resolve; login.nvidia.com -> 15.236.196.144 (A=3, AAAA=0, 15 ms)
+PASS net.dns usable verdict: ok
+PASS net.tcp443 executed on Win32 (status=ok)
+  net.tcp443 reason: TCP/443 open to 2/2 NVIDIA endpoints + baseline (login 13.37.58.205 in 43 ms)
+PASS net.tcp443 usable verdict: ok
+PASS net.tls executed on Win32 (status=ok)
+  net.tls reason: mbedTLS TLS verified on all 3 hosts: login TLSv1 cipher 128-bit, leaf 'CN=login.nvidia.com'
+PASS tls.chain executed on Win32 (status=ok)
+  tls.chain reason: login.nvidia.com chain clean: depth 3, root 'C=US, O=Amazon, CN=Amazon Root CA 1', trust 0x00000000, policy 0x00000000
+PASS every GATED self-test usable (failed: none)
+PASS net.tls evidence carries per-host handshake results
+PASS no stubs left: 0 skipped (platform/ffmpeg only)
+PASS decode.synthetic executed (status=ok)
+PASS decode.synthetic ok — 60/60 embedded frames (status=ok)
+  decode.synthetic reason: 60 frames 320x240 at 2727.3 fps, cpu 73% of one core, worst frame 1 ms (libavcodec 63.2.100 (threads=1))
+
+=== diagnostic bundle ===
+
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\knvstd.exe --diagnostics --log-dir=logs/t10
+{"bundle":"logs/t10/diag-20261028T161710Z-f5fcc9be.zip"}
+[rc=0 in 0.1s]
+PASS bundle written: C:\Users\KarnyJohnny\Desktop\KarnyNow\logs/t10/diag-20261028T161710Z-f5fcc9be.zip
+PASS zip CRCs valid (testzip)
+PASS summary.json is the first entry
+PASS bundle contains build.json
+PASS bundle contains state.json
+PASS bundle contains selftest.json
+PASS bundle contains logs/
+PASS build.json: effective _WIN32_WINNT == 0x0601 (got '0x0601')
+  build.json: git=unknown dirty=unknown arch=x86_64 compiler=gcc 16.2.0
+  build.json flags:  -O3 -DNDEBUG -march=core2 -msse3 -Wall -Wextra _WIN32_WINNT=0x0601 WINVER=0x0601 NTDDI_VERSION=0x06010000
+  build.json extras: ffmpeg=C:/Users/KarnyJohnny/Desktop/KarnyNow/build/ffmpeg,tls=mbedtls
+PASS build.json records TLS backend mbedtls
+PASS build.json extras record the FFmpeg prefix
+PASS summary.json trigger recorded
+PASS summary: within cap
+PASS bundle size 139123 B <= 8 MiB
+
+=== jsonl validation ===
+
+$ C:\Python\Python38\python.exe C:\Users\KarnyJohnny\Desktop\KarnyNow\tools\check_jsonl.py logs/t10
+JSONL VALIDATION PASS: 0 line(s) in 2 file(s), all valid
+[rc=0 in 0.4s]
+PASS check_jsonl over logs/t10
+
+=== PE check ===
+PASS knvstd.exe SubsystemVersion == 6.01 (got (6, 1))
+
+============================================================
+T10 VERDICT: ALL PASS (79 checks)
+bundle: C:\Users\KarnyJohnny\Desktop\KarnyNow\logs/t10/diag-20261028T161710Z-f5fcc9be.zip
+logs:   C:\Users\KarnyJohnny\Desktop\KarnyNow\logs/t10

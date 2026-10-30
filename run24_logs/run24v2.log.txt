@@ -1,0 +1,8 @@
+{"mode":"build","compiled":"Oct 28 2026 18:15:18","round":"XLII"}
+{"mode":"session","error":"cm_create","rc":0,"http_status":403,"cloud_status":0,"desc":""}
+
+
+kolejne uruchomienine, natychmiast po poprzednim.
+
+{"mode":"build","compiled":"Oct 28 2026 18:15:18","round":"XLII"}
+{"mode":"session","error":"cm_create","rc":0,"http_status":403,"cloud_status":0,"desc":""}
