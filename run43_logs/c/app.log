@@ -1,0 +1,2 @@
+2026-10-31T01:50:18.232Z INFO  [app] process_start build=unknown version=0.0.0 pid=2120
+2026-10-31T01:59:58.969Z ERROR [app] operation_failed op=session.media code=E_SESSION_RECOVERY_EXHAUSTED reason="the server froze the media mid-session and the bounded D8 recovery (keyframe + retries) did not revive it — a dead rig draw; the recovery block in the stdout summary and the transport channel date the freeze" next_action="the handoff line + drops map + wire mirror in the log dir are the R7/R32 evidence" amplified=true

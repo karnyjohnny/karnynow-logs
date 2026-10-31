@@ -1,0 +1,7 @@
+2026-10-31T01:36:47.316Z INFO  [media] video_stream_begin path="logs\\video.264" draw_index=0 requested="logs\\video.264"
+2026-10-31T01:39:05.714Z INFO  [media] audio open (feed): 44100Hz 2ch float32, buffer 4410 frames, ring 65536 frames
+2026-10-31T01:39:05.714Z INFO  [media] audio_play_begin fmt="44100Hz 2ch float32" swr=1 opus="libopus 1.5.2"
+2026-10-31T01:39:05.877Z INFO  [media] audio_arm srtp_derived=1 armed=1 profile=1 pt=111 red_pt=63 file=1
+2026-10-31T01:44:48.300Z INFO  [media] audio_close pages=1394 bytes=9742186 packets=66796 payload_bytes=9637095 srtp_fail=0 write_errors=0
+2026-10-31T01:44:48.320Z INFO  [media] audio_play_end pkts=66796 frames=16031040 decode_fail=0 pushed=14728502 starved=2 prerolls=2
+2026-10-31T01:44:48.385Z INFO  [media] video_stream_end path="logs\\video.264" draw_index=0 aus=9938 bytes=75166342 file_bytes=75166342 write_errors=0
