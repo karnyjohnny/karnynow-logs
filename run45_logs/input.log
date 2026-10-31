@@ -1,0 +1,10 @@
+2026-10-31T09:39:19.361Z INFO  [input] input_script_loaded path="build\\login_shift.txt" events=396 span_ms=3580500 unmapped_chars=0
+2026-10-31T09:46:28.076Z INFO  [input] input_summary script="build\\login_shift.txt" source=script events=396 fired=75 live=false live_keys=0 anti_afk_ms=60000 afk_pulses=5 sent=85 sent_key=70 sent_btn=10 sent_abs=5 sent_rel=0 sent_wheel=0 gated=0 build_fail=0 push_fail=0 late_skips=0 unmapped_chars=0
+2026-10-31T09:47:46.266Z INFO  [input] input_script_loaded path="build\\login_shift.txt" events=396 span_ms=3580500 unmapped_chars=0
+2026-10-31T09:53:07.870Z INFO  [input] input_summary script="build\\login_shift.txt" source=script events=396 fired=3 live=false live_keys=0 anti_afk_ms=60000 afk_pulses=1 sent=5 sent_key=2 sent_btn=2 sent_abs=1 sent_rel=0 sent_wheel=0 gated=0 build_fail=0 push_fail=0 late_skips=0 unmapped_chars=0
+2026-10-31T09:54:27.786Z INFO  [input] input_script_loaded path="build\\login_shift.txt" events=396 span_ms=3580500 unmapped_chars=0
+2026-10-31T09:59:29.383Z INFO  [input] input_summary script="build\\login_shift.txt" source=script events=396 fired=3 live=false live_keys=0 anti_afk_ms=60000 afk_pulses=1 sent=5 sent_key=2 sent_btn=2 sent_abs=1 sent_rel=0 sent_wheel=0 gated=0 build_fail=0 push_fail=0 late_skips=0 unmapped_chars=0
+2026-10-31T10:00:50.734Z INFO  [input] input_script_loaded path="build\\login_shift.txt" events=396 span_ms=3580500 unmapped_chars=0
+2026-10-31T10:20:26.443Z INFO  [input] input_summary script="build\\login_shift.txt" source=script events=396 fired=126 live=false live_keys=0 anti_afk_ms=60000 afk_pulses=15 sent=156 sent_key=90 sent_btn=60 sent_abs=6 sent_rel=0 sent_wheel=0 gated=0 build_fail=0 push_fail=0 late_skips=0 unmapped_chars=0
+2026-10-31T10:21:33.719Z INFO  [input] input_script_loaded path="build\\login_shift.txt" events=396 span_ms=3580500 unmapped_chars=0
+2026-10-31T10:25:37.235Z INFO  [input] input_summary script="build\\login_shift.txt" source=script events=396 fired=3 live=false live_keys=0 anti_afk_ms=60000 afk_pulses=2 sent=7 sent_key=4 sent_btn=2 sent_abs=1 sent_rel=0 sent_wheel=0 gated=0 build_fail=0 push_fail=0 late_skips=0 unmapped_chars=0

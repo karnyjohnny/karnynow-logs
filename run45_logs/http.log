@@ -1,0 +1,10 @@
+2026-10-31T09:39:19.361Z INFO  [http] cm_begin host=prod.cloudmatchbeta.nvidiagrid.net app_id=107057914 token_len=1154 token=<redacted:8>
+2026-10-31T09:46:45.215Z WARN  [http] cm_release method=DELETE host=np-waw-01.cloudmatchbeta.nvidiagrid.net session_id=5843a166-f90f-477b-a55a-7d4de0e77155 rc=-2 http_status=0 gone=false attempts=2 note="the seat may still be held; the next create can hit 403 SESSION_LIMIT (run 31)"
+2026-10-31T09:47:46.266Z INFO  [http] cm_begin host=prod.cloudmatchbeta.nvidiagrid.net app_id=107057914 token_len=1154 token=<redacted:8>
+2026-10-31T09:53:26.452Z WARN  [http] cm_release method=DELETE host=np-ams-06.cloudmatchbeta.nvidiagrid.net session_id=3385d0d1-bf9a-44a1-a21e-eab3c63c3646 rc=-2 http_status=0 gone=false attempts=2 note="the seat may still be held; the next create can hit 403 SESSION_LIMIT (run 31)"
+2026-10-31T09:54:27.786Z INFO  [http] cm_begin host=prod.cloudmatchbeta.nvidiagrid.net app_id=107057914 token_len=1154 token=<redacted:8>
+2026-10-31T09:59:48.465Z WARN  [http] cm_release method=DELETE host=np-waw-01.cloudmatchbeta.nvidiagrid.net session_id=8a0940bc-e9a0-4192-8f16-9892ee3c6c5c rc=-2 http_status=0 gone=false attempts=2 note="the seat may still be held; the next create can hit 403 SESSION_LIMIT (run 31)"
+2026-10-31T10:00:50.734Z INFO  [http] cm_begin host=prod.cloudmatchbeta.nvidiagrid.net app_id=107057914 token_len=1154 token=<redacted:8>
+2026-10-31T10:20:32.934Z INFO  [http] cm_release method=DELETE host=np-waw-01.cloudmatchbeta.nvidiagrid.net session_id=f15ed9c3-e1de-4190-96b8-b004d8b45b5d rc=0 http_status=200 gone=true attempts=1
+2026-10-31T10:21:33.719Z INFO  [http] cm_begin host=prod.cloudmatchbeta.nvidiagrid.net app_id=107057914 token_len=1154 token=<redacted:8>
+2026-10-31T10:25:55.414Z WARN  [http] cm_release method=DELETE host=np-par-04.cloudmatchbeta.nvidiagrid.net session_id=88f2d3bc-92c3-49b8-8ac1-0231f94535eb rc=-2 http_status=0 gone=false attempts=2 note="the seat may still be held; the next create can hit 403 SESSION_LIMIT (run 31)"
