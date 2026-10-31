@@ -1,0 +1,28 @@
+2026-10-30T23:51:08.880Z INFO  [media] video_stream_begin path="logs\\video_d1.264" draw_index=1 requested="logs\\video.264"
+2026-10-30T23:53:24.988Z INFO  [media] audio open (feed): 44100Hz 2ch float32, buffer 4410 frames, ring 65536 frames
+2026-10-30T23:53:25.055Z INFO  [media] audio_play_begin fmt="44100Hz 2ch float32" swr=1 opus="libopus 1.5.2"
+2026-10-30T23:53:25.224Z INFO  [media] audio_arm srtp_derived=1 armed=1 profile=1 pt=111 red_pt=63 file=1
+2026-10-30T23:56:55.693Z INFO  [media] audio_close pages=845 bytes=5485493 packets=40422 payload_bytes=5421747 srtp_fail=0 write_errors=0
+2026-10-30T23:56:55.725Z INFO  [media] audio_play_end pkts=40422 frames=9701280 decode_fail=0 pushed=8866369 starved=1 prerolls=1
+2026-10-30T23:56:55.817Z INFO  [media] video_stream_end path="logs\\video_d1.264" draw_index=1 aus=5979 bytes=18965599 file_bytes=18965599 write_errors=0
+2026-10-30T23:58:17.078Z INFO  [media] video_stream_begin path="logs\\video_d2.264" draw_index=2 requested="logs\\video.264"
+2026-10-31T00:02:58.532Z INFO  [media] audio open (feed): 44100Hz 2ch float32, buffer 4410 frames, ring 65536 frames
+2026-10-31T00:02:58.532Z INFO  [media] audio_play_begin fmt="44100Hz 2ch float32" swr=1 opus="libopus 1.5.2"
+2026-10-31T00:02:58.626Z INFO  [media] audio_arm srtp_derived=1 armed=1 profile=1 pt=111 red_pt=63 file=1
+2026-10-31T00:03:30.045Z INFO  [media] audio_close pages=98 bytes=239524 packets=4580 payload_bytes=232253 srtp_fail=0 write_errors=0
+2026-10-31T00:03:30.055Z INFO  [media] audio_play_end pkts=4580 frames=1099200 decode_fail=0 pushed=1009874 starved=2 prerolls=2
+2026-10-31T00:03:30.120Z INFO  [media] video_stream_end path="logs\\video_d2.264" draw_index=2 aus=600 bytes=6813678 file_bytes=6813678 write_errors=0
+2026-10-31T00:04:50.477Z INFO  [media] video_stream_begin path="logs\\video_d3.264" draw_index=3 requested="logs\\video.264"
+2026-10-31T00:09:31.749Z INFO  [media] audio open (feed): 44100Hz 2ch float32, buffer 4410 frames, ring 65536 frames
+2026-10-31T00:09:31.749Z INFO  [media] audio_play_begin fmt="44100Hz 2ch float32" swr=1 opus="libopus 1.5.2"
+2026-10-31T00:09:31.901Z INFO  [media] audio_arm srtp_derived=1 armed=1 profile=1 pt=111 red_pt=63 file=1
+2026-10-31T00:13:58.115Z INFO  [media] audio_close pages=1078 bytes=7287844 packets=51612 payload_bytes=7206623 srtp_fail=0 write_errors=0
+2026-10-31T00:13:58.125Z INFO  [media] audio_play_end pkts=51612 frames=12386880 decode_fail=0 pushed=11380430 starved=3 prerolls=3
+2026-10-31T00:13:58.185Z INFO  [media] video_stream_end path="logs\\video_d3.264" draw_index=3 aus=7653 bytes=35938120 file_bytes=35938120 write_errors=0
+2026-10-31T00:15:17.981Z INFO  [media] video_stream_begin path="logs\\video_d4.264" draw_index=4 requested="logs\\video.264"
+2026-10-31T00:20:00.391Z INFO  [media] audio open (feed): 44100Hz 2ch float32, buffer 4410 frames, ring 65536 frames
+2026-10-31T00:20:00.391Z INFO  [media] audio_play_begin fmt="44100Hz 2ch float32" swr=1 opus="libopus 1.5.2"
+2026-10-31T00:20:00.473Z INFO  [media] audio_arm srtp_derived=1 armed=1 profile=1 pt=111 red_pt=63 file=1
+2026-10-31T00:35:01.329Z INFO  [media] audio_close pages=3755 bytes=27448988 packets=180144 payload_bytes=27166073 srtp_fail=0 write_errors=0
+2026-10-31T00:35:01.329Z INFO  [media] audio_play_end pkts=180144 frames=43234560 decode_fail=0 pushed=39721736 starved=0 prerolls=1
+2026-10-31T00:35:01.359Z INFO  [media] video_stream_end path="logs\\video_d4.264" draw_index=4 aus=27000 bytes=308433469 file_bytes=308433469 write_errors=0

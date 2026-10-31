@@ -1,0 +1,5 @@
+2026-10-30T23:56:57.033Z WARN  [rtsp] rtsp_teardown rc=-3 status=0 release_armed=true session_id=72cae6c8-2213-4fd1-8862-06f92c403d5b note="TEARDOWN did not complete — the seat may still be held; --session-release adds the CloudMatch DELETE"
+2026-10-31T00:03:31.571Z WARN  [rtsp] rtsp_teardown rc=-3 status=0 release_armed=true session_id=f2d2c3ac-33b1-49ec-87d4-9b9165999ad6 note="TEARDOWN did not complete — the seat may still be held; --session-release adds the CloudMatch DELETE"
+2026-10-31T00:13:59.293Z WARN  [rtsp] rtsp_teardown rc=-3 status=0 release_armed=true session_id=c7e25b08-b9b4-4f85-887b-36a096c69edd note="TEARDOWN did not complete — the seat may still be held; --session-release adds the CloudMatch DELETE"
+2026-10-31T00:35:01.390Z WARN  [rtsp] rtsp_teardown_body status_text=OK body="" body_len=0
+2026-10-31T00:35:01.437Z INFO  [rtsp] rtsp_teardown rc=0 status=400 release_armed=true session_id=23523dbe-2bcc-473a-a4ca-208b74edee8f
