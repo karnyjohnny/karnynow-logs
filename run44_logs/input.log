@@ -1,0 +1,10 @@
+2026-10-31T08:06:51.774Z INFO  [input] input_script_loaded path="build\\login_1h.txt" events=396 span_ms=3580500 unmapped_chars=0
+2026-10-31T08:27:01.762Z INFO  [input] input_summary script="build\\login_1h.txt" source=script events=396 fired=144 live=false live_keys=0 anti_afk_ms=60000 afk_pulses=18 sent=180 sent_key=96 sent_btn=78 sent_abs=6 sent_rel=0 sent_wheel=0 gated=0 build_fail=0 push_fail=0 late_skips=0 unmapped_chars=0
+2026-10-31T08:28:09.945Z INFO  [input] input_script_loaded path="build\\login_1h.txt" events=396 span_ms=3580500 unmapped_chars=0
+2026-10-31T08:31:52.331Z INFO  [input] input_summary script="build\\login_1h.txt" source=script events=396 fired=72 live=false live_keys=0 anti_afk_ms=60000 afk_pulses=2 sent=76 sent_key=64 sent_btn=8 sent_abs=4 sent_rel=0 sent_wheel=0 gated=0 build_fail=0 push_fail=0 late_skips=0 unmapped_chars=0
+2026-10-31T08:33:18.239Z INFO  [input] input_script_loaded path="build\\login_1h.txt" events=396 span_ms=3580500 unmapped_chars=0
+2026-10-31T08:45:17.024Z INFO  [input] input_summary script="build\\login_1h.txt" source=script events=396 fired=80 live=false live_keys=0 anti_afk_ms=60000 afk_pulses=8 sent=96 sent_key=76 sent_btn=14 sent_abs=6 sent_rel=0 sent_wheel=0 gated=0 build_fail=0 push_fail=0 late_skips=0 unmapped_chars=0
+2026-10-31T08:46:33.149Z INFO  [input] input_script_loaded path="build\\login_1h.txt" events=396 span_ms=3580500 unmapped_chars=0
+2026-10-31T08:50:42.709Z INFO  [input] input_summary script="build\\login_1h.txt" source=script events=396 fired=72 live=false live_keys=0 anti_afk_ms=60000 afk_pulses=2 sent=76 sent_key=64 sent_btn=8 sent_abs=4 sent_rel=0 sent_wheel=0 gated=0 build_fail=0 push_fail=0 late_skips=0 unmapped_chars=0
+2026-10-31T08:52:06.572Z INFO  [input] input_script_loaded path="build\\login_1h.txt" events=396 span_ms=3580500 unmapped_chars=0
+2026-10-31T08:57:52.548Z INFO  [input] input_summary script="build\\login_1h.txt" source=script events=396 fired=3 live=false live_keys=0 anti_afk_ms=60000 afk_pulses=2 sent=7 sent_key=4 sent_btn=2 sent_abs=1 sent_rel=0 sent_wheel=0 gated=0 build_fail=0 push_fail=0 late_skips=0 unmapped_chars=0
