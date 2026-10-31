@@ -1,0 +1,1758 @@
+2026-10-31T21:06:55.451Z INFO  [diag] d3d.present: begin — NV12 DEFAULT 1280x720 -> backbuffer 1280x800 dest (0,40)-(1280,760), 30 iterations, VEH guard armed
+2026-10-31T21:06:55.591Z INFO  [diag] d3d.present: MILESTONE 0 OK — 30/30 iters, fill mean 2.12 ms, stretch+present mean 0.31 ms max 5.45 ms, pitch 1536
+2026-10-31T21:06:55.591Z INFO  [diag] selftest_result name=d3d.present status=ok ms=186 checks=11 failures=0 reason="R25 milestone 0 OK: 1280x720 NV12 DEFAULT fill verified, StretchRect+Present x30, present mean 0.31 ms max 5.45 ms, fill mean 2.12 ms, pitch 1536"
+2026-10-31T21:06:55.763Z INFO  [diag] selftest_begin name=fec.vectors
+2026-10-31T21:06:55.763Z INFO  [diag] selftest_result name=fec.vectors status=ok ms=0 checks=88 failures=0 reason="all 88 known-answer checks passed"
+2026-10-31T21:06:55.763Z INFO  [diag] selftest_begin name=srtp.vectors
+2026-10-31T21:06:55.763Z INFO  [diag] selftest_result name=srtp.vectors status=ok ms=1 checks=52 failures=0 reason="all 52 known-answer checks passed"
+2026-10-31T21:06:55.763Z INFO  [diag] selftest_begin name=input.vectors
+2026-10-31T21:06:55.763Z INFO  [diag] selftest_result name=input.vectors status=ok ms=0 checks=50 failures=0 reason="all 50 known-answer checks passed"
+2026-10-31T21:06:55.763Z INFO  [diag] selftest_begin name=audio.vectors
+2026-10-31T21:06:55.763Z INFO  [diag] selftest_result name=audio.vectors status=ok ms=1 checks=188 failures=0 reason="all 188 audio-pipeline checks passed (kn_ogg framing + kn_arx SRTP/RED/seq vectors)"
+2026-10-31T21:06:55.763Z INFO  [diag] selftest_begin name=clock.resolution
+2026-10-31T21:06:55.942Z WARN  [diag] selftest_result name=clock.resolution status=degraded ms=174 checks=3 failures=0 reason="Sleep(1) mean 15.62 ms -> 2.88 ms after timeBeginPeriod(1); wall tick 15600 us -> 15600 us"
+2026-10-31T21:06:55.959Z INFO  [diag] selftest_begin name=console.host
+2026-10-31T21:06:55.959Z INFO  [diag] selftest_result name=console.host status=ok ms=0 checks=1 failures=0 reason="ConEmu hook present (build 230724); ANSI not probeable (stdout redirected) — hook is the D1 evidence"
+2026-10-31T21:06:55.959Z INFO  [diag] selftest_begin name=d3d.formats
+2026-10-31T21:06:56.084Z INFO  [diag] d3d.formats: adapter 8086:2a42 drv 000a0b35 mode 1280x800@60 nv12 fmt/conv 1/1 hwvp 0x00000000
+2026-10-31T21:06:56.084Z INFO  [diag] selftest_result name=d3d.formats status=ok ms=123 checks=10 failures=0 reason="D7 rung 1 available: NV12->X8R8G8B8 conversion ok, LINEAR caps, HAL+HWVP device ok; 1280x800@60 Hz; PCI 8086:2a42"
+2026-10-31T21:06:56.084Z INFO  [diag] selftest_begin name=d3d.present
+2026-10-31T21:06:56.131Z INFO  [diag] d3d.present: begin — NV12 DEFAULT 1280x720 -> backbuffer 1280x800 dest (0,40)-(1280,760), 30 iterations, VEH guard armed
+2026-10-31T21:06:56.271Z INFO  [diag] d3d.present: MILESTONE 0 OK — 30/30 iters, fill mean 2.13 ms, stretch+present mean 0.31 ms max 5.21 ms, pitch 1536
+2026-10-31T21:06:56.271Z INFO  [diag] selftest_result name=d3d.present status=ok ms=191 checks=11 failures=0 reason="R25 milestone 0 OK: 1280x720 NV12 DEFAULT fill verified, StretchRect+Present x30, present mean 0.31 ms max 5.21 ms, fill mean 2.13 ms, pitch 1536"
+2026-10-31T21:06:56.271Z INFO  [diag] selftest_begin name=decode.synthetic
+2026-10-31T21:06:56.302Z INFO  [diag] selftest_result name=decode.synthetic status=ok ms=24 checks=5 failures=0 reason="60 frames 320x240 at 3000.0 fps, cpu 155% of one core, worst frame 1 ms (libavcodec 63.2.100 (threads=1))"
+2026-10-31T21:06:56.302Z INFO  [diag] selftest_begin name=gs.parse
+2026-10-31T21:06:56.302Z INFO  [diag] selftest_result name=gs.parse status=ok ms=0 checks=78 failures=0 reason="all 78 known-answer checks passed"
+2026-10-31T21:06:56.302Z INFO  [diag] selftest_begin name=rx.vectors
+2026-10-31T21:06:56.302Z INFO  [diag] selftest_result name=rx.vectors status=ok ms=2 checks=153 failures=0 reason="all 153 receive-pipeline checks passed (scenarios 31/31, srtp256/gcm verified)"
+2026-10-31T21:06:56.302Z INFO  [diag] selftest_begin name=sock.loopback
+2026-10-31T21:06:56.365Z INFO  [diag] selftest_result name=sock.loopback status=ok ms=56 checks=9 failures=0 reason="UDP loopback OK: 64/64 datagrams byte-exact (burst 1 ms), timeout 53 ms, rcvbuf 262144 B applied (req 262144 B)"
+2026-10-31T21:06:56.365Z INFO  [diag] selftest_begin name=net.dns
+2026-10-31T21:06:56.380Z INFO  [diag] selftest_result name=net.dns status=ok ms=17 checks=3 failures=0 reason="3/3 hosts resolve; login.nvidia.com -> 52.47.194.248 (A=3, AAAA=0, 7 ms)"
+2026-10-31T21:06:56.380Z INFO  [diag] selftest_begin name=net.tcp443
+2026-10-31T21:06:56.443Z INFO  [diag] selftest_result name=net.tcp443 status=ok ms=74 checks=3 failures=0 reason="TCP/443 open to 2/2 NVIDIA endpoints + baseline (login 15.236.196.144 in 45 ms)"
+2026-10-31T21:06:56.443Z INFO  [diag] selftest_begin name=net.tls
+2026-10-31T21:06:56.552Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4606 => handshake
+
+2026-10-31T21:06:56.552Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.552Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.552Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_HELLO_REQUEST
+
+2026-10-31T21:06:56.552Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.552Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.552Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_HELLO
+
+2026-10-31T21:06:56.552Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_client.c:919 => write client hello
+
+2026-10-31T21:06:56.552Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2783 => write handshake message
+
+2026-10-31T21:06:56.552Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2943 => write record
+
+2026-10-31T21:06:56.552Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:3080 <= write record
+
+2026-10-31T21:06:56.552Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2904 <= write handshake message
+
+2026-10-31T21:06:56.552Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_client.c:1012 <= write client hello
+
+2026-10-31T21:06:56.552Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.552Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2367 
+
+2026-10-31T21:06:56.552Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2374 ssl->f_send() returned 341 (-0xfffffeab)
+
+2026-10-31T21:06:56.552Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2401 <= flush output
+
+2026-10-31T21:06:56.552Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_HELLO
+
+2026-10-31T21:06:56.552Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:1193 => parse server hello
+
+2026-10-31T21:06:56.552Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.552Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.552Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 99 (-0xffffff9d)
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:1445 
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:1659 <= parse server hello
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CERTIFICATE
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8186 => parse certificate
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 2715 (-0xfffff565)
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 1105 (-0xfffffbaf)
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8299 <= parse certificate
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_KEY_EXCHANGE
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2087 => parse server key exchange
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 300 (-0xfffffed4)
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.583Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:1803 ECDH curve: x25519
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2457 <= parse server key exchange
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CERTIFICATE_REQUEST
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2496 => parse certificate request
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 4 (-0xfffffffc)
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2658 <= parse certificate request
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_HELLO_DONE
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2669 => parse server hello done
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4257 reuse previously read message
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2697 <= parse server hello done
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_CERTIFICATE
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7592 => write certificate
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7603 <= skip write certificate
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_KEY_EXCHANGE
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2712 => write client key exchange
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2783 => write handshake message
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2943 => write record
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2367 
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2374 ssl->f_send() returned 42 (-0xffffffd6)
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2401 <= flush output
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:3080 <= write record
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2904 <= write handshake message
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3207 <= write client key exchange
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CERTIFICATE_VERIFY
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3255 => write certificate verify
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7206 => derive keys
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7330 => calc verify
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7349 <= calc verify
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7257 <= derive keys
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3277 <= skip write certificate verify
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_CHANGE_CIPHER_SPEC
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:5189 => write change cipher spec
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2783 => write handshake message
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2943 => write record
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2367 
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2374 ssl->f_send() returned 6 (-0xfffffffa)
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2401 <= flush output
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:3080 <= write record
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2904 <= write handshake message
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:5202 <= write change cipher spec
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_FINISHED
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8530 => write finished
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8364 => calc finished tls
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8395 <= calc finished
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2783 => write handshake message
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2943 => write record
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:935 => encrypt buf
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:1474 <= encrypt buf
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2367 
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2374 ssl->f_send() returned 45 (-0xffffffd3)
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2401 <= flush output
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:3080 <= write record
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2904 <= write handshake message
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8632 <= write finished
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CHANGE_CIPHER_SPEC
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3383 => parse new session ticket
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.599Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 148 (-0xffffff6c)
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3477 <= parse new session ticket
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CHANGE_CIPHER_SPEC
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:5211 => parse change cipher spec
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 1 (-0xffffffff)
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:5259 <= parse change cipher spec
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_FINISHED
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8645 => parse finished
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8364 => calc finished tls
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8395 <= calc finished
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 40 (-0xffffffd8)
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:1510 => decrypt buf
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2121 <= decrypt buf
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8715 <= parse finished
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_FLUSH_BUFFERS
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3585 handshake: done
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_HANDSHAKE_WRAPUP
+
+2026-10-31T21:06:56.677Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4617 <= handshake
+
+2026-10-31T21:06:56.739Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4606 => handshake
+
+2026-10-31T21:06:56.739Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.739Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.739Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_HELLO_REQUEST
+
+2026-10-31T21:06:56.739Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.739Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.739Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_HELLO
+
+2026-10-31T21:06:56.739Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_client.c:919 => write client hello
+
+2026-10-31T21:06:56.739Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2783 => write handshake message
+
+2026-10-31T21:06:56.739Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2943 => write record
+
+2026-10-31T21:06:56.739Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:3080 <= write record
+
+2026-10-31T21:06:56.739Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2904 <= write handshake message
+
+2026-10-31T21:06:56.739Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_client.c:1012 <= write client hello
+
+2026-10-31T21:06:56.739Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.739Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2367 
+
+2026-10-31T21:06:56.739Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2374 ssl->f_send() returned 359 (-0xfffffe99)
+
+2026-10-31T21:06:56.739Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2401 <= flush output
+
+2026-10-31T21:06:56.739Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_HELLO
+
+2026-10-31T21:06:56.739Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:1193 => parse server hello
+
+2026-10-31T21:06:56.739Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.739Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.739Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 69 (-0xffffffbb)
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:1445 
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:1659 <= parse server hello
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CERTIFICATE
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8186 => parse certificate
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 1333 (-0xfffffacb)
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 1412 (-0xfffffa7c)
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 319 (-0xfffffec1)
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8299 <= parse certificate
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_KEY_EXCHANGE
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2087 => parse server key exchange
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 300 (-0xfffffed4)
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:1803 ECDH curve: x25519
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2457 <= parse server key exchange
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CERTIFICATE_REQUEST
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2496 => parse certificate request
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 4 (-0xfffffffc)
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2658 <= parse certificate request
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_HELLO_DONE
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2669 => parse server hello done
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4257 reuse previously read message
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2697 <= parse server hello done
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_CERTIFICATE
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7592 => write certificate
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7603 <= skip write certificate
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_KEY_EXCHANGE
+
+2026-10-31T21:06:56.755Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2712 => write client key exchange
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2783 => write handshake message
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2943 => write record
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2367 
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2374 ssl->f_send() returned 42 (-0xffffffd6)
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2401 <= flush output
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:3080 <= write record
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2904 <= write handshake message
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3207 <= write client key exchange
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CERTIFICATE_VERIFY
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3255 => write certificate verify
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7206 => derive keys
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7330 => calc verify
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7349 <= calc verify
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7257 <= derive keys
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3277 <= skip write certificate verify
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_CHANGE_CIPHER_SPEC
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:5189 => write change cipher spec
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2783 => write handshake message
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2943 => write record
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2367 
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2374 ssl->f_send() returned 6 (-0xfffffffa)
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2401 <= flush output
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:3080 <= write record
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2904 <= write handshake message
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:5202 <= write change cipher spec
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_FINISHED
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8530 => write finished
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8364 => calc finished tls
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8395 <= calc finished
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2783 => write handshake message
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2943 => write record
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:935 => encrypt buf
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:1474 <= encrypt buf
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2367 
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2374 ssl->f_send() returned 37 (-0xffffffdb)
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2401 <= flush output
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:3080 <= write record
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2904 <= write handshake message
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8632 <= write finished
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CHANGE_CIPHER_SPEC
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3383 => parse new session ticket
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.770Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 218 (-0xffffff26)
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3477 <= parse new session ticket
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CHANGE_CIPHER_SPEC
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:5211 => parse change cipher spec
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 1 (-0xffffffff)
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:5259 <= parse change cipher spec
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_FINISHED
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8645 => parse finished
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8364 => calc finished tls
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8395 <= calc finished
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 32 (-0xffffffe0)
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:1510 => decrypt buf
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2121 <= decrypt buf
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8715 <= parse finished
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_FLUSH_BUFFERS
+
+2026-10-31T21:06:56.817Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3585 handshake: done
+
+2026-10-31T21:06:56.833Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.833Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.833Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_HANDSHAKE_WRAPUP
+
+2026-10-31T21:06:56.833Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4617 <= handshake
+
+2026-10-31T21:06:56.895Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4606 => handshake
+
+2026-10-31T21:06:56.895Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.895Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.895Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_HELLO_REQUEST
+
+2026-10-31T21:06:56.895Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.895Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.895Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_HELLO
+
+2026-10-31T21:06:56.895Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_client.c:919 => write client hello
+
+2026-10-31T21:06:56.895Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2783 => write handshake message
+
+2026-10-31T21:06:56.895Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2943 => write record
+
+2026-10-31T21:06:56.895Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:3080 <= write record
+
+2026-10-31T21:06:56.895Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2904 <= write handshake message
+
+2026-10-31T21:06:56.895Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_client.c:1012 <= write client hello
+
+2026-10-31T21:06:56.895Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.895Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2367 
+
+2026-10-31T21:06:56.895Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2374 ssl->f_send() returned 343 (-0xfffffea9)
+
+2026-10-31T21:06:56.895Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2401 <= flush output
+
+2026-10-31T21:06:56.895Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_HELLO
+
+2026-10-31T21:06:56.895Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:1193 => parse server hello
+
+2026-10-31T21:06:56.895Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.895Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.895Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 67 (-0xffffffbd)
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:1445 
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:1659 <= parse server hello
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CERTIFICATE
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8186 => parse certificate
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 2508 (-0xfffff634)
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8299 <= parse certificate
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_KEY_EXCHANGE
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2087 => parse server key exchange
+
+2026-10-31T21:06:56.911Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 114 (-0xffffff8e)
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:1803 ECDH curve: x25519
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2457 <= parse server key exchange
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CERTIFICATE_REQUEST
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2496 => parse certificate request
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 4 (-0xfffffffc)
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2658 <= parse certificate request
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_HELLO_DONE
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2669 => parse server hello done
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4257 reuse previously read message
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2697 <= parse server hello done
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_CERTIFICATE
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7592 => write certificate
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7603 <= skip write certificate
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_KEY_EXCHANGE
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2712 => write client key exchange
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2783 => write handshake message
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2943 => write record
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2367 
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2374 ssl->f_send() returned 42 (-0xffffffd6)
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2401 <= flush output
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:3080 <= write record
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2904 <= write handshake message
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3207 <= write client key exchange
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CERTIFICATE_VERIFY
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3255 => write certificate verify
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7206 => derive keys
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7330 => calc verify
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7349 <= calc verify
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7257 <= derive keys
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3277 <= skip write certificate verify
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_CHANGE_CIPHER_SPEC
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:5189 => write change cipher spec
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2783 => write handshake message
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2943 => write record
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2367 
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2374 ssl->f_send() returned 6 (-0xfffffffa)
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2401 <= flush output
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:3080 <= write record
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2904 <= write handshake message
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:5202 <= write change cipher spec
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_FINISHED
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8530 => write finished
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8364 => calc finished tls
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8395 <= calc finished
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2783 => write handshake message
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2943 => write record
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:935 => encrypt buf
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:1474 <= encrypt buf
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2367 
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2374 ssl->f_send() returned 37 (-0xffffffdb)
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2401 <= flush output
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:3080 <= write record
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2904 <= write handshake message
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8632 <= write finished
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CHANGE_CIPHER_SPEC
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3383 => parse new session ticket
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.926Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 202 (-0xffffff36)
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3477 <= parse new session ticket
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CHANGE_CIPHER_SPEC
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:5211 => parse change cipher spec
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 1 (-0xffffffff)
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:5259 <= parse change cipher spec
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_FINISHED
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8645 => parse finished
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8364 => calc finished tls
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8395 <= calc finished
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 32 (-0xffffffe0)
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:1510 => decrypt buf
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2121 <= decrypt buf
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8715 <= parse finished
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_FLUSH_BUFFERS
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3585 handshake: done
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_HANDSHAKE_WRAPUP
+
+2026-10-31T21:06:56.989Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4617 <= handshake
+
+2026-10-31T21:06:56.989Z INFO  [diag] selftest_result name=net.tls status=ok ms=545 checks=3 failures=0 reason="mbedTLS TLS verified on all 3 hosts: login TLSv1 cipher 128-bit, leaf 'CN=login.nvidia.com'"
+2026-10-31T21:06:56.989Z INFO  [diag] selftest_begin name=tls.chain
+2026-10-31T21:06:57.082Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4606 => handshake
+
+2026-10-31T21:06:57.082Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:57.082Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:57.082Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_HELLO_REQUEST
+
+2026-10-31T21:06:57.082Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:57.082Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:57.082Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_HELLO
+
+2026-10-31T21:06:57.082Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_client.c:919 => write client hello
+
+2026-10-31T21:06:57.082Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2783 => write handshake message
+
+2026-10-31T21:06:57.082Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2943 => write record
+
+2026-10-31T21:06:57.082Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:3080 <= write record
+
+2026-10-31T21:06:57.082Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2904 <= write handshake message
+
+2026-10-31T21:06:57.082Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_client.c:1012 <= write client hello
+
+2026-10-31T21:06:57.082Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:57.082Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2367 
+
+2026-10-31T21:06:57.082Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2374 ssl->f_send() returned 341 (-0xfffffeab)
+
+2026-10-31T21:06:57.082Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2401 <= flush output
+
+2026-10-31T21:06:57.082Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_HELLO
+
+2026-10-31T21:06:57.082Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:1193 => parse server hello
+
+2026-10-31T21:06:57.082Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:57.082Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:57.082Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 99 (-0xffffff9d)
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:1445 
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:1659 <= parse server hello
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CERTIFICATE
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8186 => parse certificate
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 2715 (-0xfffff565)
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 1105 (-0xfffffbaf)
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8299 <= parse certificate
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_KEY_EXCHANGE
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2087 => parse server key exchange
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 300 (-0xfffffed4)
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:1803 ECDH curve: x25519
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2457 <= parse server key exchange
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CERTIFICATE_REQUEST
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2496 => parse certificate request
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 4 (-0xfffffffc)
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2658 <= parse certificate request
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_HELLO_DONE
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2669 => parse server hello done
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4257 reuse previously read message
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2697 <= parse server hello done
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_CERTIFICATE
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7592 => write certificate
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7603 <= skip write certificate
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_KEY_EXCHANGE
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:2712 => write client key exchange
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2783 => write handshake message
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2943 => write record
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2367 
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2374 ssl->f_send() returned 42 (-0xffffffd6)
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2401 <= flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:3080 <= write record
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2904 <= write handshake message
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3207 <= write client key exchange
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CERTIFICATE_VERIFY
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3255 => write certificate verify
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7206 => derive keys
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7330 => calc verify
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7349 <= calc verify
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:7257 <= derive keys
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3277 <= skip write certificate verify
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_CHANGE_CIPHER_SPEC
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:5189 => write change cipher spec
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2783 => write handshake message
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2943 => write record
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2367 
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2374 ssl->f_send() returned 6 (-0xfffffffa)
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2401 <= flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:3080 <= write record
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2904 <= write handshake message
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:5202 <= write change cipher spec
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_CLIENT_FINISHED
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8530 => write finished
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8364 => calc finished tls
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8395 <= calc finished
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2783 => write handshake message
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2943 => write record
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:935 => encrypt buf
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:1474 <= encrypt buf
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2367 
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2374 ssl->f_send() returned 45 (-0xffffffd3)
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2401 <= flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:3080 <= write record
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2904 <= write handshake message
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8632 <= write finished
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CHANGE_CIPHER_SPEC
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3383 => parse new session ticket
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:57.129Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 148 (-0xffffff6c)
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3477 <= parse new session ticket
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_CHANGE_CIPHER_SPEC
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:5211 => parse change cipher spec
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 1 (-0xffffffff)
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:5259 <= parse change cipher spec
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_SERVER_FINISHED
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8645 => parse finished
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8364 => calc finished tls
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8395 <= calc finished
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4189 => read record
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 5 (-0xfffffffb)
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2155 => fetch input
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2295 
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2315 
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2318 ssl->f_recv(_timeout)() returned 40 (-0xffffffd8)
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2340 <= fetch input
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:1510 => decrypt buf
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2121 <= decrypt buf
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:4261 <= read record
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:8715 <= parse finished
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_FLUSH_BUFFERS
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls12_clie:3585 handshake: done
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2353 => flush output
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_msg.c:2362 <= flush output
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4525 client state: MBEDTLS_SSL_HANDSHAKE_WRAPUP
+
+2026-10-31T21:06:57.207Z INFO  [diag] mbedTLS[2] C:/Users/KarnyJohnny/Desktop/KarnyNow/third_party/mbedtls/library/ssl_tls.c:4617 <= handshake
+
+2026-10-31T21:06:57.207Z INFO  [diag] selftest_result name=tls.chain status=ok ms=216 checks=4 failures=0 reason="login.nvidia.com chain clean: depth 3, root 'C=US, O=Amazon, CN=Amazon Root CA 1', trust 0x00000000, policy 0x00000000"
