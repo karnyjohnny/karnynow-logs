@@ -1,0 +1,8 @@
+2026-10-31T16:17:08.864Z INFO  [input] input_script_loaded path="build\\login_1h.txt" events=396 span_ms=3580500 unmapped_chars=0
+2026-10-31T16:20:55.870Z INFO  [input] input_summary script="build\\login_1h.txt" source=script events=396 fired=72 live=false live_keys=0 anti_afk_ms=60000 afk_pulses=2 sent=76 sent_key=64 sent_btn=8 sent_abs=4 sent_rel=0 sent_wheel=0 gated=0 build_fail=0 push_fail=0 late_skips=0 unmapped_chars=0
+2026-10-31T16:22:14.053Z INFO  [input] input_script_loaded path="build\\login_1h.txt" events=396 span_ms=3580500 unmapped_chars=0
+2026-10-31T16:45:02.420Z INFO  [input] input_summary script="build\\login_1h.txt" source=script events=396 fired=146 live=false live_keys=0 anti_afk_ms=60000 afk_pulses=19 sent=184 sent_key=98 sent_btn=80 sent_abs=6 sent_rel=0 sent_wheel=0 gated=0 build_fail=0 push_fail=0 late_skips=0 unmapped_chars=0
+2026-10-31T16:46:21.469Z INFO  [input] input_script_loaded path="build\\login_1h.txt" events=396 span_ms=3580500 unmapped_chars=0
+2026-10-31T16:53:30.311Z INFO  [input] input_summary script="build\\login_1h.txt" source=script events=396 fired=72 live=false live_keys=0 anti_afk_ms=60000 afk_pulses=3 sent=78 sent_key=66 sent_btn=8 sent_abs=4 sent_rel=0 sent_wheel=0 gated=0 build_fail=0 push_fail=0 late_skips=0 unmapped_chars=0
+2026-10-31T16:54:49.811Z INFO  [input] input_script_loaded path="build\\login_1h.txt" events=396 span_ms=3580500 unmapped_chars=0
+2026-10-31T17:19:09.128Z INFO  [input] input_summary script="build\\login_1h.txt" source=script events=396 fired=154 live=false live_keys=0 anti_afk_ms=60000 afk_pulses=20 sent=194 sent_key=100 sent_btn=88 sent_abs=6 sent_rel=0 sent_wheel=0 gated=0 build_fail=0 push_fail=0 late_skips=0 unmapped_chars=0

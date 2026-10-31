@@ -1,0 +1,3 @@
+2026-10-31T17:26:00.964Z INFO  [rtsp] rtsp_teardown rc=0 status=200 release_armed=true session_id=5e2dbdf9-394c-473b-bcd0-ab993737db2e
+2026-10-31T17:46:36.601Z WARN  [rtsp] rtsp_teardown_body status_text=OK body="" body_len=0
+2026-10-31T17:46:36.695Z INFO  [rtsp] rtsp_teardown rc=0 status=400 release_armed=true session_id=3f60d207-3dca-44dd-a0fb-9f936b41e153

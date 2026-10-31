@@ -1,0 +1,8 @@
+2026-10-31T16:17:08.864Z INFO  [http] cm_begin host=prod.cloudmatchbeta.nvidiagrid.net app_id=107057914 token_len=1154 token=<redacted:8>
+2026-10-31T16:21:13.137Z WARN  [http] cm_release method=DELETE host=np-lon-05.cloudmatchbeta.nvidiagrid.net session_id=f2303ba4-a0ca-4eb5-bf41-3912c2f9d8e1 rc=-2 http_status=0 gone=false attempts=2 note="the seat may still be held; the next create can hit 403 SESSION_LIMIT (run 31)"
+2026-10-31T16:22:14.053Z INFO  [http] cm_begin host=prod.cloudmatchbeta.nvidiagrid.net app_id=107057914 token_len=1154 token=<redacted:8>
+2026-10-31T16:45:20.254Z WARN  [http] cm_release method=DELETE host=np-ams-07.cloudmatchbeta.nvidiagrid.net session_id=56530308-680b-48e0-be5a-849d37406df4 rc=-2 http_status=0 gone=false attempts=2 note="the seat may still be held; the next create can hit 403 SESSION_LIMIT (run 31)"
+2026-10-31T16:46:21.469Z INFO  [http] cm_begin host=prod.cloudmatchbeta.nvidiagrid.net app_id=107057914 token_len=1154 token=<redacted:8>
+2026-10-31T16:53:48.522Z WARN  [http] cm_release method=DELETE host=np-ams-05.cloudmatchbeta.nvidiagrid.net session_id=10e35603-cf18-42d6-9361-c1c859482465 rc=-2 http_status=0 gone=false attempts=2 note="the seat may still be held; the next create can hit 403 SESSION_LIMIT (run 31)"
+2026-10-31T16:54:49.811Z INFO  [http] cm_begin host=prod.cloudmatchbeta.nvidiagrid.net app_id=107057914 token_len=1154 token=<redacted:8>
+2026-10-31T17:19:24.822Z WARN  [http] cm_release method=DELETE host=np-ams-07.cloudmatchbeta.nvidiagrid.net session_id=2d1c4fc1-d223-488f-ba5a-44b437fa2798 rc=-2 http_status=0 gone=false attempts=2 note="the seat may still be held; the next create can hit 403 SESSION_LIMIT (run 31)"

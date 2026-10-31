@@ -1,0 +1,129 @@
+T10 skrot — 2026-10-31 17:07:02
+VERDICT: ALL PASS
+checks: 89 total, 0 failed
+PASS third_party/tiny-aes-c/aes.c already present and verified
+PASS third_party/tiny-aes-c/aes.h already present and verified
+PASS third_party/crypto-algorithms-sha1/sha1.c already present and verified
+PASS third_party/crypto-algorithms-sha1/sha1.h already present and verified
+PASS TLS backend is supported (mbedtls)
+PASS mbedTLS source version is 3.6.0
+PASS usrsctp source already present
+PASS opus source already present
+PASS cmake configure
+PASS ninja build
+PASS zero compiler warnings (0 seen)
+PASS test_knfec.exe exists in build
+PASS test_knring.exe exists in build
+PASS test_knaudio.exe exists in build
+PASS test_kngs.exe exists in build
+PASS test_knselftest.exe exists in build
+PASS knvstd.exe exists in build
+PASS test_kndiag.exe exists in build
+PASS test_knlog.exe exists in build
+PASS test_knsrtp.exe exists in build
+PASS test_kndrawpath.exe exists in build
+PASS test_knfreeze.exe exists in build
+PASS test_knopus.exe exists in build
+PASS test_knlog -> PASS
+PASS test_knring -> PASS
+PASS test_knfec -> PASS
+PASS test_knsrtp -> PASS
+PASS test_kndiag -> PASS
+PASS test_knselftest -> PASS
+PASS test_kngs -> PASS
+PASS test_knaudio -> PASS
+PASS test_knrx -> PASS
+PASS test_knsock -> PASS
+PASS test_knws -> PASS
+PASS test_knrtsp -> PASS
+PASS test_kncm -> PASS
+PASS test_kncert -> PASS
+PASS test_kndtls -> PASS
+PASS test_knsctp -> PASS
+PASS test_kninput -> PASS
+PASS test_knbw -> PASS
+PASS test_knogg -> PASS
+PASS test_knarx -> PASS
+PASS test_kndrawpath -> PASS
+PASS test_knfreeze -> PASS
+PASS test_knopus -> PASS
+PASS registry lists 16 self-tests (12 from §7.9 + rx.vectors + sock.loopback + input.vectors + audio.vectors)
+PASS R25 milestone 0: d3d.present standalone (ok)
+PASS --selftest=all exit 0 (gated policy) + JSON
+PASS fec.vectors ok in the target binary
+PASS srtp.vectors ok in the target binary
+PASS gs.parse ok in the target binary
+PASS rx.vectors ok in the target binary
+PASS sock.loopback ok in the target binary
+PASS input.vectors ok in the target binary
+PASS audio.vectors ok in the target binary
+PASS clock.resolution executed on Win32 (status=degraded)
+PASS console.host executed on Win32 (status=ok)
+PASS d3d.formats executed on Win32 (status=ok)
+PASS d3d.formats verdict usable (D7): ok
+PASS d3d.present executed on Win32 (status=ok)
+PASS d3d.present verdict usable (D7): ok
+PASS console.host not failed (D1): ok
+PASS net.dns executed on Win32 (status=ok)
+PASS net.dns usable verdict: ok
+PASS net.tcp443 executed on Win32 (status=ok)
+PASS net.tcp443 usable verdict: ok
+PASS net.tls executed on Win32 (status=ok)
+PASS tls.chain executed on Win32 (status=ok)
+PASS every GATED self-test usable (failed: none)
+PASS net.tls evidence carries per-host handshake results
+PASS no stubs left: 0 skipped (platform/ffmpeg only)
+PASS decode.synthetic executed (status=ok)
+PASS decode.synthetic ok — 60/60 embedded frames (status=ok)
+PASS bundle written: C:\Users\KarnyJohnny\Desktop\KarnyNow\logs/t10/diag-20261031T160701Z-4c3c2e36.zip
+PASS zip CRCs valid (testzip)
+PASS summary.json is the first entry
+PASS bundle contains build.json
+PASS bundle contains state.json
+PASS bundle contains selftest.json
+PASS bundle contains logs/
+PASS build.json: effective _WIN32_WINNT == 0x0601 (got '0x0601')
+PASS build.json records TLS backend mbedtls
+PASS build.json extras record the FFmpeg prefix
+PASS summary.json trigger recorded
+PASS summary: within cap
+PASS bundle size 139409 B <= 8 MiB
+PASS check_jsonl over logs/t10
+PASS knvstd.exe SubsystemVersion == 6.01 (got (6, 1))
+
+selftests (status/ms/checks):
+  fec.vectors       ok          0ms checks=88 fail=0
+      reason: all 88 known-answer checks passed
+  srtp.vectors      ok          1ms checks=52 fail=0
+      reason: all 52 known-answer checks passed
+  input.vectors     ok          0ms checks=50 fail=0
+      reason: all 50 known-answer checks passed
+  audio.vectors     ok          1ms checks=188 fail=0
+      reason: all 188 audio-pipeline checks passed (kn_ogg framing + kn_arx SRTP/RED/seq vectors)
+  clock.resolution  degraded  168ms checks=3 fail=0
+      reason: Sleep(1) mean 15.62 ms -> 2.75 ms after timeBeginPeriod(1); wall tick 15600 us -> 15600 us
+  console.host      ok          0ms checks=1 fail=0
+      reason: ConEmu hook present (build 230724); ANSI not probeable (stdout redirected) — hook is the D1 evidence
+  d3d.formats       ok        120ms checks=10 fail=0
+      reason: D7 rung 1 available: NV12->X8R8G8B8 conversion ok, LINEAR caps, HAL+HWVP device ok; 1280x800@60 Hz; PCI 8086:2a42
+  d3d.present       ok        188ms checks=11 fail=0
+      reason: R25 milestone 0 OK: 1280x720 NV12 DEFAULT fill verified, StretchRect+Present x30, present mean 0.31 ms max 5.31 ms, fill mean 2.15 ms, pitch 1536
+  decode.synthetic  ok         23ms checks=5 fail=0
+      reason: 60 frames 320x240 at 3000.0 fps, cpu 155% of one core, worst frame 1 ms (libavcodec 63.2.100 (threads=1))
+  gs.parse          ok          0ms checks=78 fail=0
+      reason: all 78 known-answer checks passed
+  rx.vectors        ok          2ms checks=153 fail=0
+      reason: all 153 receive-pipeline checks passed (scenarios 31/31, srtp256/gcm verified)
+  sock.loopback     ok         58ms checks=9 fail=0
+      reason: UDP loopback OK: 64/64 datagrams byte-exact (burst 2 ms), timeout 55 ms, rcvbuf 262144 B applied (req 262144 B)
+  net.dns           ok         17ms checks=3 fail=0
+      reason: 3/3 hosts resolve; login.nvidia.com -> 15.236.196.144 (A=3, AAAA=0, 7 ms)
+  net.tcp443        ok         67ms checks=3 fail=0
+      reason: TCP/443 open to 2/2 NVIDIA endpoints + baseline (login 52.47.194.248 in 41 ms)
+  net.tls           ok        548ms checks=3 fail=0
+      reason: mbedTLS TLS verified on all 3 hosts: login TLSv1 cipher 128-bit, leaf 'CN=login.nvidia.com'
+  tls.chain         ok        217ms checks=4 fail=0
+      reason: login.nvidia.com chain clean: depth 3, root 'C=US, O=Amazon, CN=Amazon Root CA 1', trust 0x00000000, policy 0x00000000
+
+bundle: C:\Users\KarnyJohnny\Desktop\KarnyNow\logs/t10/diag-20261031T160701Z-4c3c2e36.zip
+bundle bytes: 139409
