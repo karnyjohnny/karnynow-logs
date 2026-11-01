@@ -1,0 +1,1 @@
+2026-11-01T19:53:01.673Z INFO  [input] input_summary script="" source=capture events=0 fired=0 live=false live_keys=65 anti_afk_ms=60000 afk_pulses=1 sent=1545 sent_key=132 sent_btn=162 sent_abs=1251 sent_rel=0 sent_wheel=0 gated=0 build_fail=0 push_fail=0 late_skips=0 unmapped_chars=0

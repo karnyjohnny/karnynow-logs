@@ -1,0 +1,1 @@
+2026-11-01T19:48:11.994Z WARN  [rtsp] rtsp_teardown rc=-3 status=0 release_armed=true session_id=29639118-d1f9-4300-a295-3b2353c6d7e2 note="TEARDOWN did not complete — the seat may still be held; --session-release adds the CloudMatch DELETE"

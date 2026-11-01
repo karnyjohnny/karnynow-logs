@@ -1,0 +1,2 @@
+2026-11-01T19:26:58.662Z INFO  [http] cm_begin host=prod.cloudmatchbeta.nvidiagrid.net app_id=107057914 token_len=1091 token=<redacted:8>
+2026-11-01T19:29:59.207Z WARN  [http] cm_release method=DELETE host=np-ams-07.cloudmatchbeta.nvidiagrid.net session_id=1ecc5156-885b-497f-8092-3ddae0fcace0 rc=-2 http_status=0 gone=false attempts=2 note="the seat may still be held; the next create can hit 403 SESSION_LIMIT (run 31)"

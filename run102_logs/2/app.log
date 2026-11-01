@@ -1,0 +1,2 @@
+2026-11-01T19:31:49.733Z INFO  [app] process_start build=unknown version=0.0.0 pid=4596
+2026-11-01T19:39:44.752Z ERROR [app] operation_failed op=session.media code=E_SESSION_CTRL_DEAD reason="the rig's 1 Hz renderer heartbeat (0x0101) went silent for >=8 s with video already dark >=2 s (F30 watchdog): a ctrl-first dead-rig draw; the death_cascade line dates every plane" next_action="the handoff line + drops map + wire mirror in the log dir are the R7/R32 evidence" amplified=true
