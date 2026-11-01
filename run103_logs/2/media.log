@@ -1,0 +1,4 @@
+2026-11-01T21:38:30.537Z INFO  [media] audio open (feed): 44100Hz 2ch float32, buffer 4410 frames, ring 65536 frames
+2026-11-01T21:38:30.537Z INFO  [media] audio_play_begin fmt="44100Hz 2ch float32" swr=1 opus="libopus 1.5.2"
+2026-11-01T21:38:30.708Z INFO  [media] audio_arm srtp_derived=1 armed=1 profile=1 pt=111 red_pt=63 file=0
+2026-11-01T21:38:45.428Z INFO  [media] audio_play_end pkts=2900 frames=696000 decode_fail=0 pushed=639434 starved=2 prerolls=3
