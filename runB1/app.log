@@ -1,0 +1,2 @@
+2026-11-02T22:43:28.982Z INFO  [app] process_start build=unknown version=0.0.0 pid=3316
+2026-11-02T22:45:52.229Z ERROR [app] operation_failed op=session.cm code=E_SESSION_NOT_READY reason="the session never reached ready state" next_action="queue position/seat step lines above show where it stalled; entitlements/queue are server-side" amplified=true
