@@ -1,0 +1,26 @@
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\knvstd.exe --session --session-token=<redacted:1091> --session-app=107057914 --session-device=557e89aa-f353-47de-909b-96cb95f9b501 --cm-profile=browser --webrtc-answer=45 --session-queue-timeout=1500 --session-seconds=120 --log-dir=C:\Users\KarnyJohnny\Desktop\KarnyNow\logs\runB4b\5 --wire-dump=C:\Users\KarnyJohnny\Desktop\KarnyNow\logs\runB4b\5\wire_r1.txt
+# draw folder: C:\Users\KarnyJohnny\Desktop\KarnyNow\logs\runB4b\5
+{"mode":"build","compiled":"Nov  3 2026 15:30:55","round":"N"}
+{"mode":"session","event":"wire_dump_begin","ok":1,"path":"C:/Users/KarnyJohnny/Desktop/KarnyNow/logs/runB4b/5/wire_r1.txt"}
+{"mode":"session","event":"cm_identity","profile":"browser","device_hash_id":"557e89aa-f353-47de-909b-96cb95f9b501","subsession_id":"5d6f6116-5346-475d-8d4f-28102a55f4db","tz_name":"Europe/Warsaw","tz_offset_ms":3600000,"user_age":25,"client_version":"2.0.89.154"}
+{"mode":"session","event":"cm_created","session_id":"40fbd52d-c3cf-4452-a76f-6f0923a8f6ae","status":1,"phase":"preparing","queue_position":0,"have_queue":0,"resumed":0}
+{"mode":"session","event":"cm_control","poll_host":"np-waw-01.cloudmatchbeta.nvidiagrid.net","port":443,"source":"sessionControlInfo"}
+{"mode":"session","event":"queue","status":1,"phase":"preparing","queue_position":1,"have_queue":1,"seat_step":5,"ready":0}
+{"mode":"session","event":"queue","status":1,"phase":"preparing","queue_position":123,"have_queue":1,"seat_step":1,"ready":0}
+{"mode":"session","event":"queue","status":1,"phase":"preparing","queue_position":121,"have_queue":1,"seat_step":1,"ready":0}
+{"mode":"session","event":"ad_offered","ad_id":"c4c0a623-136a-4f45-a3f4-c3179bb5df1c","len_s":120,"state":1,"required":1}
+{"mode":"session","event":"ad_vast","rc":0,"http_status":200,"media":0,"trackers":0}
+{"mode":"session","event":"ad_cancel","rc":0,"http_status":200,"reason":"VAST_NO_ADS_AFTER_WRAPPER","vast_excerpt":"<?xml version=\"1.0\" encoding=\"UTF-8\"?>?<VAST xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"vast.xsd\" version=\"4.0\"/>?"}
+{"mode":"session","event":"queue","status":1,"phase":"preparing","queue_position":114,"have_queue":1,"seat_step":1,"ready":0}
+{"mode":"session","event":"queue","status":1,"phase":"preparing","queue_position":110,"have_queue":1,"seat_step":1,"ready":0}
+{"mode":"session","event":"queue","status":1,"phase":"preparing","queue_position":105,"have_queue":1,"seat_step":1,"ready":0}
+{"mode":"session","event":"queue","status":1,"phase":"preparing","queue_position":100,"have_queue":1,"seat_step":1,"ready":0}
+{"mode":"session","event":"queue","status":1,"phase":"preparing","queue_position":97,"have_queue":1,"seat_step":1,"ready":0}
+{"mode":"session","event":"queue","status":1,"phase":"preparing","queue_position":89,"have_queue":1,"seat_step":1,"ready":0}
+{"mode":"session","event":"queue","status":1,"phase":"preparing","queue_position":89,"have_queue":1,"seat_step":1,"ready":0}
+{"mode":"session","event":"queue","status":1,"phase":"preparing","queue_position":86,"have_queue":1,"seat_step":1,"ready":0}
+{"mode":"session","event":"queue","status":1,"phase":"preparing","queue_position":84,"have_queue":1,"seat_step":1,"ready":0}
+{"mode":"session","event":"queue","status":1,"phase":"preparing","queue_position":78,"have_queue":1,"seat_step":1,"ready":0}
+{"mode":"session","event":"queue","status":1,"phase":"preparing","queue_position":78,"have_queue":1,"seat_step":1,"ready":0}
+{"mode":"session","event":"queue","status":1,"phase":"preparing","queue_position":75,"have_queue":1,"seat_step":1,"ready":0}
+{"mode":"session","event":"queue","status":1,"phase":"preparing","queue_position":70,"have_queue":1,"seat_step":1,"ready":0}
