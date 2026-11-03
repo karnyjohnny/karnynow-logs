@@ -1,0 +1,12 @@
+$ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\knvstd.exe --session --session-token=<redacted:1091> --session-app=107057914 --session-device=557e89aa-f353-47de-909b-96cb95f9b501 --cm-profile=browser --webrtc-answer=45 --session-queue-timeout=1500 --session-seconds=300 --log-dir=C:\Users\KarnyJohnny\Desktop\KarnyNow\logs\runB4b\1 --wire-dump=C:\Users\KarnyJohnny\Desktop\KarnyNow\logs\runB4b\1\wire_r1.txt
+# draw folder: C:\Users\KarnyJohnny\Desktop\KarnyNow\logs\runB4b\1
+{"mode":"build","compiled":"Nov  3 2026 15:30:55","round":"N"}
+{"mode":"session","event":"wire_dump_begin","ok":1,"path":"C:/Users/KarnyJohnny/Desktop/KarnyNow/logs/runB4b/1/wire_r1.txt"}
+{"mode":"session","event":"cm_identity","profile":"browser","device_hash_id":"557e89aa-f353-47de-909b-96cb95f9b501","subsession_id":"4d42334b-38f7-44d6-b9a0-a860598a04ae","tz_name":"Europe/Warsaw","tz_offset_ms":3600000,"user_age":25,"client_version":"2.0.89.154"}
+{"mode":"session","event":"cm_create_backoff","status":500,"attempt":1,"wait_ms":20000}
+{"mode":"session","event":"cm_create_backoff","status":500,"attempt":2,"wait_ms":40000}
+{"mode":"session","event":"cm_create_backoff","status":500,"attempt":3,"wait_ms":80000}
+{"mode":"session","event":"cm_create_backoff","status":500,"attempt":4,"wait_ms":160000}
+{"mode":"session","error":"cm_create","rc":0,"http_status":500,"cloud_status":0,"desc":""}
+{"mode":"session","event":"wire_dump_end","records":15,"redactions":5,"bytes_out":18415,"bytes_in":10670}
+# knvstd finished — exit code 1

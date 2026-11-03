@@ -1,0 +1,21 @@
+# KarnyNow launcher — draw manifest (slice 4q)
+run:                 runB4b
+draw:                2
+started_at:          2026-11-03 15:55:14
+utc:                 2026-11-03T14:55:14Z
+game_title:          Arknights: Endfield
+game_uuid:           08bef896-0453-4d55-8786-2950db798626
+app_id:              107057914
+app_store:           UNKNOWN
+variant_short_name:  
+owned:               True
+device_id:           557e89aa-f353-47de-909b-96cb95f9b501
+knvstd:              C:\Users\KarnyJohnny\Desktop\KarnyNow\build\knvstd.exe
+argv_redacted:       C:\Users\KarnyJohnny\Desktop\KarnyNow\build\knvstd.exe --session --session-token=<redacted:1091> --session-app=107057914 --session-device=557e89aa-f353-47de-909b-96cb95f9b501 --cm-profile=browser --webrtc-answer=45 --session-queue-timeout=1500 --session-seconds=300 --log-dir=C:\Users\KarnyJohnny\Desktop\KarnyNow\logs\runB4b\2 --wire-dump=C:\Users\KarnyJohnny\Desktop\KarnyNow\logs\runB4b\2\wire_r1.txt
+params:              --cm-profile=browser --webrtc-answer=45 --session-queue-timeout=1500 --session-seconds=300
+log_dir:             C:\Users\KarnyJohnny\Desktop\KarnyNow\logs\runB4b\2
+wire_dump:           C:\Users\KarnyJohnny\Desktop\KarnyNow\logs\runB4b\2\wire_r1.txt
+console_log:         C:\Users\KarnyJohnny\Desktop\KarnyNow\logs\runB4b\2\console.log
+finished_at:         2026-11-03 16:00:16
+exit_code:           1
+crash:               False
