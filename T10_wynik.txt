@@ -1,4 +1,4 @@
-T10 build+test+selftests — 2026-11-03 11:58:43
+T10 build+test+selftests — 2026-11-03 13:05:00
 repo root: C:\Users\KarnyJohnny\Desktop\KarnyNow
 
 === required source dependencies ===
@@ -25,14 +25,14 @@ CMake suite maintained and supported by Kitware (kitware.com/cmake).
 
 $ ninja --version
 1.13.2
-[rc=0 in 0.3s]
+[rc=0 in 0.1s]
 
 $ gcc --version
 gcc (GCC) 16.2.0
 Copyright (C) 2026 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-[rc=0 in 0.5s]
+[rc=0 in 0.1s]
 
 === build ===
 TLS backend: mbedtls
@@ -213,103 +213,103 @@ to suppress it.
 -- link library: ws2_32
 -- kn_sctp: usrsctp backend ENABLED (third_party/usrsctp)
 -- FFmpeg: no bin/*.dll — static build, nothing to copy
--- Configuring done (69.6s)
--- Generating done (1.9s)
+-- Configuring done (55.6s)
+-- Generating done (1.8s)
 -- Build files have been written to: C:/Users/KarnyJohnny/Desktop/KarnyNow/build
-[rc=0 in 72.1s]
+[rc=0 in 57.9s]
 PASS cmake configure
 
 $ cmake --build build
 [1/89] Building C object CMakeFiles/kncore.dir/streamer/src/knring.c.obj
-[2/89] Building C object CMakeFiles/kncore.dir/streamer/src/knfec.c.obj
-[3/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_aes.c.obj
+[2/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_aes.c.obj
+[3/89] Building C object CMakeFiles/kncore.dir/streamer/src/knfec.c.obj
 [4/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_sha1.c.obj
-[5/89] Building C object CMakeFiles/kncore.dir/streamer/src/knlog.c.obj
-[6/89] Building C object CMakeFiles/kncore.dir/streamer/src/knsrtp.c.obj
+[5/89] Building C object CMakeFiles/kncore.dir/streamer/src/knsrtp.c.obj
+[6/89] Building C object CMakeFiles/kncore.dir/streamer/src/knlog.c.obj
 [7/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_diag.c.obj
 [8/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_decode.c.obj
 [9/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_gs.c.obj
 [10/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_perf.c.obj
-[11/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_d3d.c.obj
+[11/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_selftest.c.obj
 [12/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_net.c.obj
-[13/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_selftest.c.obj
-[14/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_audio.c.obj
+[13/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_audio.c.obj
+[14/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_d3d.c.obj
 [15/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_wire.c.obj
 [16/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_sock.c.obj
-[17/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_ws.c.obj
-[18/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_rx.c.obj
-[19/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_sdp.c.obj
-[20/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_json.c.obj
-[21/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_rtsp.c.obj
-[22/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_cm.c.obj
-[23/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_http.c.obj
-[24/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_cert.c.obj
+[17/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_rx.c.obj
+[18/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_ws.c.obj
+[19/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_rtsp.c.obj
+[20/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_sdp.c.obj
+[21/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_json.c.obj
+[22/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_http.c.obj
+[23/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_cert.c.obj
+[24/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_cm.c.obj
 [25/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_dtls.c.obj
-[26/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_input.c.obj
-[27/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_drawpath.c.obj
+[26/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_drawpath.c.obj
+[27/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_input.c.obj
 [28/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_freeze.c.obj
-[29/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_sctp.c.obj
+[29/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_bw.c.obj
 [30/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_ogg.c.obj
 [31/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_arx.c.obj
-[32/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_bw.c.obj
-[33/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_opus.c.obj
+[32/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_opus.c.obj
+[33/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_sctp.c.obj
 [34/89] Building C object CMakeFiles/kncore.dir/third_party/crypto-algorithms-sha1/sha1.c.obj
 [35/89] Building C object CMakeFiles/kncore.dir/third_party/tiny-aes-c/aes.c.obj
 [36/89] Building C object CMakeFiles/test_knlog.dir/streamer/tests/test_knlog.c.obj
 [37/89] Building C object CMakeFiles/test_knring.dir/streamer/tests/test_knring.c.obj
-[38/89] Building C object CMakeFiles/test_knsrtp.dir/streamer/tests/test_knsrtp.c.obj
-[39/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_net_mbedtls.c.obj
-[40/89] Building C object CMakeFiles/test_knfec.dir/streamer/tests/test_knfec.c.obj
+[38/89] Building C object CMakeFiles/kncore.dir/streamer/src/kn_net_mbedtls.c.obj
+[39/89] Building C object CMakeFiles/test_knfec.dir/streamer/tests/test_knfec.c.obj
+[40/89] Building C object CMakeFiles/test_knsrtp.dir/streamer/tests/test_knsrtp.c.obj
 [41/89] Linking C static library libkncore.a
-[42/89] Building C object CMakeFiles/test_kndiag.dir/streamer/tests/test_kndiag.c.obj
+[42/89] Building C object CMakeFiles/test_knselftest.dir/streamer/tests/test_knselftest.c.obj
 [43/89] Building C object CMakeFiles/test_kngs.dir/streamer/tests/test_kngs.c.obj
 [44/89] Building C object CMakeFiles/test_knaudio.dir/streamer/tests/test_knaudio.c.obj
-[45/89] Building C object CMakeFiles/test_knselftest.dir/streamer/tests/test_knselftest.c.obj
-[46/89] Building C object CMakeFiles/test_knrx.dir/streamer/tests/test_knrx.c.obj
-[47/89] Building C object CMakeFiles/test_knws.dir/streamer/tests/test_knws.c.obj
-[48/89] Building C object CMakeFiles/test_knrtsp.dir/streamer/tests/test_knrtsp.c.obj
-[49/89] Building C object CMakeFiles/test_kncm.dir/streamer/tests/test_kncm.c.obj
+[45/89] Building C object CMakeFiles/test_kndiag.dir/streamer/tests/test_kndiag.c.obj
+[46/89] Building C object CMakeFiles/test_knws.dir/streamer/tests/test_knws.c.obj
+[47/89] Building C object CMakeFiles/test_knsock.dir/streamer/tests/test_knsock.c.obj
+[48/89] Building C object CMakeFiles/test_knrx.dir/streamer/tests/test_knrx.c.obj
+[49/89] Building C object CMakeFiles/test_knrtsp.dir/streamer/tests/test_knrtsp.c.obj
 [50/89] Building C object CMakeFiles/test_kncert.dir/streamer/tests/test_kncert.c.obj
 [51/89] Building C object CMakeFiles/test_kndtls.dir/streamer/tests/test_kndtls.c.obj
 [52/89] Building C object CMakeFiles/test_knsctp.dir/streamer/tests/test_knsctp.c.obj
-[53/89] Building C object CMakeFiles/test_kndrawpath.dir/streamer/tests/test_kndrawpath.c.obj
-[54/89] Building C object CMakeFiles/test_knsock.dir/streamer/tests/test_knsock.c.obj
-[55/89] Building C object CMakeFiles/test_knfreeze.dir/streamer/tests/test_knfreeze.c.obj
-[56/89] Building C object CMakeFiles/test_kninput.dir/streamer/tests/test_kninput.c.obj
-[57/89] Building C object CMakeFiles/test_knd3d.dir/streamer/tests/test_knd3d.c.obj
-[58/89] Building C object CMakeFiles/test_knbw.dir/streamer/tests/test_knbw.c.obj
-[59/89] Building C object CMakeFiles/test_knarx.dir/streamer/tests/test_knarx.c.obj
-[60/89] Building C object CMakeFiles/test_knogg.dir/streamer/tests/test_knogg.c.obj
+[53/89] Building C object CMakeFiles/test_kncm.dir/streamer/tests/test_kncm.c.obj
+[54/89] Building C object CMakeFiles/test_knd3d.dir/streamer/tests/test_knd3d.c.obj
+[55/89] Building C object CMakeFiles/test_kndrawpath.dir/streamer/tests/test_kndrawpath.c.obj
+[56/89] Building C object CMakeFiles/test_knfreeze.dir/streamer/tests/test_knfreeze.c.obj
+[57/89] Building C object CMakeFiles/test_kninput.dir/streamer/tests/test_kninput.c.obj
+[58/89] Building C object CMakeFiles/test_knogg.dir/streamer/tests/test_knogg.c.obj
+[59/89] Building C object CMakeFiles/test_knbw.dir/streamer/tests/test_knbw.c.obj
+[60/89] Building C object CMakeFiles/test_knarx.dir/streamer/tests/test_knarx.c.obj
 [61/89] Building C object CMakeFiles/test_knopus.dir/streamer/tests/test_knopus.c.obj
 [62/89] Building C object CMakeFiles/test_knwire.dir/streamer/tests/test_knwire.c.obj
 [63/89] Linking C executable test_knring.exe
 [64/89] Linking C executable test_knlog.exe
-[65/89] Linking C executable test_knfec.exe
-[66/89] Linking C executable test_kndiag.exe
-[67/89] Linking C executable test_knsrtp.exe
+[65/89] Linking C executable test_knsrtp.exe
+[66/89] Linking C executable test_knfec.exe
+[67/89] Linking C executable test_kndiag.exe
 [68/89] Linking C executable test_kngs.exe
 [69/89] Linking C executable test_knaudio.exe
 [70/89] Linking C executable test_knrx.exe
 [71/89] Linking C executable test_knsock.exe
-[72/89] Building C object CMakeFiles/knvstd.dir/streamer/src/knvstd_main.c.obj
+[72/89] Linking C executable test_knws.exe
 [73/89] Linking C executable test_knrtsp.exe
-[74/89] Linking C executable test_knws.exe
+[74/89] Linking C executable test_kncm.exe
 [75/89] Linking C executable test_kncert.exe
-[76/89] Linking C executable test_kncm.exe
+[76/89] Building C object CMakeFiles/knvstd.dir/streamer/src/knvstd_main.c.obj
 [77/89] Linking C executable test_kndtls.exe
-[78/89] Linking C executable test_knsctp.exe
-[79/89] Linking C executable test_kninput.exe
+[78/89] Linking C executable test_kninput.exe
+[79/89] Linking C executable test_knsctp.exe
 [80/89] Linking C executable test_kndrawpath.exe
 [81/89] Linking C executable test_knd3d.exe
 [82/89] Linking C executable test_knfreeze.exe
-[83/89] Linking C executable test_knogg.exe
-[84/89] Linking C executable test_knbw.exe
+[83/89] Linking C executable test_knbw.exe
+[84/89] Linking C executable test_knogg.exe
 [85/89] Linking C executable test_knarx.exe
-[86/89] Linking C executable test_knopus.exe
-[87/89] Linking C executable test_knwire.exe
-[88/89] Linking C executable test_knselftest.exe
-[89/89] Linking C executable knvstd.exe
-[rc=0 in 199.6s]
+[86/89] Linking C executable test_knwire.exe
+[87/89] Linking C executable test_knopus.exe
+[88/89] Linking C executable knvstd.exe
+[89/89] Linking C executable test_knselftest.exe
+[rc=0 in 195.1s]
 PASS ninja build
 PASS zero compiler warnings (0 seen)
 PASS test_knfec.exe exists in build
@@ -330,12 +330,12 @@ no FFmpeg DLLs next to knvstd.exe — static build (D18): knvstd links lib/*.a d
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knlog.exe
 test_knlog: 105 checks, 0 failures -> PASS
-[rc=0 in 5.0s]
+[rc=0 in 2.8s]
 PASS test_knlog -> PASS
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knring.exe
 test_knring: 34 checks, 0 failures -> PASS
-[rc=0 in 0.1s]
+[rc=0 in 0.0s]
 PASS test_knring -> PASS
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knfec.exe
@@ -346,27 +346,27 @@ PASS test_knfec -> PASS
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knsrtp.exe
 test_knsrtp: 77 checks, 0 failures -> PASS
-[rc=0 in 0.3s]
+[rc=0 in 0.1s]
 PASS test_knsrtp -> PASS
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_kndiag.exe
 test_kndiag: 110 checks, 0 failures -> PASS
-[rc=0 in 1.3s]
+[rc=0 in 1.1s]
 PASS test_kndiag -> PASS
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knselftest.exe
 test_knselftest: 117 checks, 0 failures -> PASS
-[rc=0 in 12.4s]
+[rc=0 in 9.9s]
 PASS test_knselftest -> PASS
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_kngs.exe
 test_kngs: 125 checks, 0 failures -> PASS
-[rc=0 in 0.0s]
+[rc=0 in 0.2s]
 PASS test_kngs -> PASS
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knaudio.exe
 test_knaudio: 74 checks, 0 failures -> PASS
-[rc=0 in 0.0s]
+[rc=0 in 0.1s]
 PASS test_knaudio -> PASS
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knrx.exe
@@ -380,7 +380,7 @@ $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knrx.exe
 -- round XL feedback plane --
 -- round XLI recovery state machine --
 test_knrx: 243 checks, 0 failures -> PASS
-[rc=0 in 0.0s]
+[rc=0 in 0.1s]
 PASS test_knrx -> PASS
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knsock.exe
@@ -397,7 +397,7 @@ $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knsock.exe
 -- recvfrom source (slice 5d) --
 -- STUN toolkit (round XXV KAT) --
 test_knsock: 125 checks, 0 failures -> PASS
-[rc=0 in 0.3s]
+[rc=0 in 0.4s]
 PASS test_knsock -> PASS
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knws.exe
@@ -408,7 +408,7 @@ $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knws.exe
 -- send framing (masked client frames) --
 -- receive framing --
 test_knws: 92 checks, 0 failures -> PASS
-[rc=0 in 0.1s]
+[rc=0 in 0.2s]
 PASS test_knws -> PASS
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knrtsp.exe
@@ -425,7 +425,7 @@ $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knrtsp.exe
 -- TEARDOWN mismatch skip --
 -- error paths --
 test_knrtsp: 150 checks, 0 failures -> PASS
-[rc=0 in 0.0s]
+[rc=0 in 0.1s]
 PASS test_knrtsp -> PASS
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_kncm.exe
@@ -440,7 +440,7 @@ $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_kncm.exe
 -- kn_cm queue ads (F36) --
 -- kn_cm session resume (F38) --
 test_kncm: 272 checks, 0 failures -> PASS
-[rc=0 in 0.0s]
+[rc=0 in 0.1s]
 PASS test_kncm -> PASS
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_kncert.exe
@@ -453,26 +453,26 @@ $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_kndtls.exe
 -- kn_dtls demux predicate (looks_like_dtls, nvst.rs:6345) --
 -- kn_dtls real battery (mbedTLS, loopback UDP) --
 test_kndtls: 39 checks, 0 failures -> PASS
-[rc=0 in 3.2s]
+[rc=0 in 3.3s]
 PASS test_kndtls -> PASS
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knsctp.exe
 -- DCEP goldens vs the independent Python reference --
 -- kn_sctp real battery (vendored usrsctp, AF_CONN) --
 test_knsctp: 35 checks, 0 failures -> PASS
-[rc=0 in 1.4s]
+[rc=0 in 1.5s]
 PASS test_knsctp -> PASS
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_kninput.exe
 == test_kninput: the NVST control/input plane ==
 test_kninput: 802 checks, 0 failures -> PASS
-[rc=0 in 0.0s]
+[rc=0 in 0.1s]
 PASS test_kninput -> PASS
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knbw.exe
 == test_knbw: bandwidth estimator + server-control decoder ==
 knbw: 387 checks, 0 failures -> PASS
-[rc=0 in 0.0s]
+[rc=0 in 0.1s]
 PASS test_knbw -> PASS
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knogg.exe
@@ -489,7 +489,7 @@ PASS ogg.script.mixed_durations: 3 pages, 373 bytes
 PASS ogg.contract edges
   kn_ogg KAT battery: 143 checks, 0 failures
 test_knogg: 163 checks, 0 failures -> PASS
-[rc=0 in 0.0s]
+[rc=0 in 0.1s]
 PASS test_knogg -> PASS
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knarx.exe
@@ -514,7 +514,7 @@ PASS test_knarx -> PASS
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_kndrawpath.exe
 == test_kndrawpath: the per-draw capture naming rule (F16) ==
 test_kndrawpath: 1051 checks, 0 failures -> PASS
-[rc=0 in 0.0s]
+[rc=0 in 0.1s]
 PASS test_kndrawpath -> PASS
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\test_knfreeze.exe
@@ -536,14 +536,14 @@ $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\knvstd.exe --list-selftests
 PASS registry lists 16 self-tests (12 from §7.9 + rx.vectors + sock.loopback + input.vectors + audio.vectors)
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\knvstd.exe --selftest=d3d.present --log-dir=logs/t10
-{"generated_utc":"2026-11-03T11:03:42.686Z","count":1,"results":[{"name":"d3d.present","status":"ok","gated":true,"ms":229,"checks":11,"failures":0,"reason":"R25 milestone 0 OK: 1280x720 NV12 DEFAULT fill verified, StretchRect+Present x30, present mean 0.33 ms max 5.54 ms, fill mean 2.07 ms, pitch 1536","evidence":{"checks":11,"failures":0,"first_failure":"","ok":true,"iters":"30/30","pitch":1536,"video":"1280x720","screen":"1280x800","dest":"0,40,1280,760","fill_ms_mean":2.07,"fill_ms_max":28.84,"present_ms_mean":0.33,"present_ms_max":5.54,"filter":"linear","mismatches":0,"bytes_per_fill":1658880,"hrs":{"dev":"0x00000000","conv":"0x00000000","surf":"0x00000000","lock":"0x00000000","stretch":"0x00000000","present":"0x00000000","tcl":"0x00000000"},"seh":"0x00000000","seh_addr":"0x0000000000000000","degraded_latch":false}}],"truncated":false}
-[rc=0 in 0.8s]
-  milestone-0 reason: R25 milestone 0 OK: 1280x720 NV12 DEFAULT fill verified, StretchRect+Present x30, present mean 0.33 ms max 5.54 ms, fill mean 2.07 ms, pitch 1536
+{"generated_utc":"2026-11-03T12:09:36.053Z","count":1,"results":[{"name":"d3d.present","status":"ok","gated":true,"ms":193,"checks":11,"failures":0,"reason":"R25 milestone 0 OK: 1280x720 NV12 DEFAULT fill verified, StretchRect+Present x30, present mean 0.43 ms max 5.96 ms, fill mean 2.14 ms, pitch 1536","evidence":{"checks":11,"failures":0,"first_failure":"","ok":true,"iters":"30/30","pitch":1536,"video":"1280x720","screen":"1280x800","dest":"0,40,1280,760","fill_ms_mean":2.14,"fill_ms_max":28.77,"present_ms_mean":0.43,"present_ms_max":5.96,"filter":"linear","mismatches":0,"bytes_per_fill":1658880,"hrs":{"dev":"0x00000000","conv":"0x00000000","surf":"0x00000000","lock":"0x00000000","stretch":"0x00000000","present":"0x00000000","tcl":"0x00000000"},"seh":"0x00000000","seh_addr":"0x0000000000000000","degraded_latch":false}}],"truncated":false}
+[rc=0 in 0.4s]
+  milestone-0 reason: R25 milestone 0 OK: 1280x720 NV12 DEFAULT fill verified, StretchRect+Present x30, present mean 0.43 ms max 5.96 ms, fill mean 2.14 ms, pitch 1536
 PASS R25 milestone 0: d3d.present standalone (ok)
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\knvstd.exe --selftest=all --log-dir=logs/t10
-{"generated_utc":"2026-11-03T11:03:44.519Z","count":16,"results":[{"name":"fec.vectors","status":"ok","gated":true,"ms":0,"checks":88,"failures":0,"reason":"all 88 known-answer checks passed","evidence":{"checks":88,"failures":0,"first_failure":"","vectors":"knfec_kat_vectors.h (tools/fec_reference.py)"}},{"name":"srtp.vectors","status":"ok","gated":true,"ms":0,"checks":52,"failures":0,"reason":"all 52 known-answer checks passed","evidence":{"checks":52,"failures":0,"first_failure":"","replay_ops":96,"replay_mismatches":0}},{"name":"input.vectors","status":"ok","gated":true,"ms":0,"checks":50,"failures":0,"reason":"all 50 known-answer checks passed","evidence":{"checks":50,"failures":0,"first_failure":"","vectors":"kn_input_kat_vectors.h (tools/input_reference.py)","chain":8}},{"name":"audio.vectors","status":"ok","gated":true,"ms":1,"checks":188,"failures":0,"reason":"all 188 audio-pipeline checks passed (kn_ogg framing + kn_arx SRTP/RED/seq vectors)","evidence":{"checks":188,"failures":0,"first_failure":"","vectors":"kn_ogg_kat_vectors.h + kn_arx_kat_vectors.h (tools/oggopus_reference.py, tools/arx_reference.py)"}},{"name":"clock.resolution","status":"ok","gated":true,"ms":36,"checks":3,"failures":0,"reason":"Sleep(1) mean 2.88 ms -> 1.00 ms after timeBeginPeriod(1); wall tick 15600 us -> 1000 us","evidence":{"checks":3,"failures":0,"first_failure":"","qpc_hz":1948310,"wall_tick_us_before":15600,"wall_tick_us_after":1000,"sleep1_ms_before":2.88,"sleep1_ms_after":1.00}},{"name":"console.host","status":"ok","gated":true,"ms":0,"checks":1,"failures":0,"reason":"ConEmu hook present (build 230724); ANSI not probeable (stdout redirected) — hook is the D1 evidence","evidence":{"checks":1,"failures":0,"first_failure":"","conemu_hk64":true,"conemu_hk32":false,"conemu_build":"230724","stdout_is_console":false,"vt_setconsolemode_ok":false,"vt_err":0,"attr_applied":"not_probed"}},{"name":"d3d.formats","status":"ok","gated":true,"ms":103,"checks":10,"failures":0,"reason":"D7 rung 1 available: NV12->X8R8G8B8 conversion ok, LINEAR caps, HAL+HWVP device ok; 1280x800@60 Hz; PCI 8086:2a42","evidence":{"checks":10,"failures":0,"first_failure":"","adapter":"8086:2a42","driver":"0x0008000f000a0b35","desc":"Intel(R) HD Graphics Family","mode":"1280x800@60","bb":"X8R8G8B8","modes":16,"hz60_at_res":1,"hwvp":"0x00000000","swvp":"0x00000000","fmt":{"nv12":1,"yuy2":1,"uyvy":1,"x8":1,"a8":1,"r5g6":1,"x1r5":0},"conv":{"nv12":1,"yuy2":1,"x8":1,"to_nv12":0},"srf_caps":"0x03000300","linear":1,"point":1,"imm":1,"one":1}},{"name":"d3d.present","status":"ok","gated":true,"ms":179,"checks":11,"failures":0,"reason":"R25 milestone 0 OK: 1280x720 NV12 DEFAULT fill verified, StretchRect+Present x30, present mean 0.34 ms max 5.47 ms, fill mean 2.19 ms, pitch 1536","evidence":{"checks":11,"failures":0,"first_failure":"","ok":true,"iters":"30/30","pitch":1536,"video":"1280x720","screen":"1280x800","dest":"0,40,1280,760","fill_ms_mean":2.19,"fill_ms_max":29.80,"present_ms_mean":0.34,"present_ms_max":5.47,"filter":"linear","mismatches":0,"bytes_per_fill":1658880,"hrs":{"dev":"0x00000000","conv":"0x00000000","surf":"0x00000000","lock":"0x00000000","stretch":"0x00000000","present":"0x00000000","tcl":"0x00000000"},"seh":"0x00000000","seh_addr":"0x0000000000000000","degraded_latch":false}},{"name":"decode.synthetic","status":"ok","gated":true,"ms":26,"checks":5,"failures":0,"reason":"60 frames 320x240 at 2608.7 fps, cpu 135% of one core, worst frame 1 ms (libavcodec 63.2.100 (threads=1))","evidence":{"backend":"libavcodec 63.2.100 (threads=1)","clip":"<embedded 42912 B>","rc":0,"frames":60,"failed":0,"cb_frames":60,"width":320,"height":240,"fps":2608.7,"cpu_pct_of_core":134.8,"decode_ms_max":1,"wall_ms":23}},{"name":"gs.parse","status":"ok","gated":true,"ms":1,"checks":78,"failures":0,"reason":"all 78 known-answer checks passed","evidence":{"checks":78,"failures":0,"first_failure":"","vectors":"kn_gs_kat_vectors.h (tools/gs_reference.py)","capture":"none (stage 2 records real dumps)"}},{"name":"rx.vectors","status":"ok","gated":true,"ms":2,"checks":153,"failures":0,"reason":"all 153 receive-pipeline checks passed (scenarios 31/31, srtp256/gcm verified)","evidence":{"checks":153,"failures":0,"first_failure":"","vectors":"kn_rx_kat_vectors.h (tools/rx_reference.py)","scenarios_passed":31,"scenarios_total":31,"srtp_backend":1}},{"name":"sock.loopback","status":"ok","gated":true,"ms":58,"checks":9,"failures":0,"reason":"UDP loopback OK: 64/64 datagrams byte-exact (burst 1 ms), timeout 54 ms, rcvbuf 262144 B applied (req 262144 B)","evidence":{"checks":9,"failures":0,"first_failure":"","burst_got":64,"burst_mismatch":0,"burst_ms":1,"timeout_ms":54,"rcvbuf_req":262144,"rcvbuf_act":262144,"port_a":49629,"port_b":49630}},{"name":"net.dns","status":"ok","gated":true,"ms":41,"checks":3,"failures":0,"reason":"3/3 hosts resolve; login.nvidia.com -> 52.47.194.248 (A=3, AAAA=0, 6 ms)","evidence":{"checks":3,"failures":0,"first_failure":"","hosts":[{"host":"login.nvidia.com","rc":0,"a":3,"aaaa":0,"v4":"52.47.194.248","ms":6},{"host":"prod.cloudmatchbeta.nvidiagrid.net","rc":0,"a":6,"aaaa":0,"v4":"80.250.98.38","ms":7},{"host":"stun.l.google.com","rc":0,"a":1,"aaaa":0,"v4":"74.125.250.129","ms":26}]}},{"name":"net.tcp443","status":"ok","gated":true,"ms":88,"checks":3,"failures":0,"reason":"TCP/443 open to 2/2 NVIDIA endpoints + baseline (login 15.236.196.144 in 54 ms)","evidence":{"checks":3,"failures":0,"first_failure":"","hosts":[{"host":"login.nvidia.com","rc":0,"wsa":0,"peer":"15.236.196.144","ms":54},{"host":"prod.cloudmatchbeta.nvidiagrid.net","rc":0,"wsa":0,"peer":"80.250.98.41","ms":12},{"host":"www.cloudflare.com","rc":0,"wsa":0,"peer":"104.16.124.96","ms":19}]}},{"name":"net.tls","status":"ok","gated":false,"ms":580,"checks":3,"failures":0,"reason":"mbedTLS TLS verified on all 3 hosts: login TLSv1 cipher 128-bit, leaf 'CN=login.nvidia.com'","evidence":{"checks":3,"failures":0,"first_failure":"","hosts":[{"host":"login.nvidia.com","rc":0,"sec":"0x00000000","proto":"TLSv1.2","cipher_bits":128,"leaf":"CN=login.nvidia.com"},{"host":"prod.cloudmatchbeta.nvidiagrid.net","rc":0,"sec":"0x00000000","proto":"TLSv1.2","cipher_bits":256,"leaf":"C=US, ST=California, L=Santa Cla"},{"host":"www.cloudflare.com","rc":0,"sec":"0x00000000","proto":"TLSv1.2","cipher_bits":256,"leaf":"CN=www.cloudflare.com"}]}},{"name":"tls.chain","status":"ok","gated":false,"ms":232,"checks":4,"failures":0,"reason":"login.nvidia.com chain clean: depth 3, root 'C=US, O=Amazon, CN=Amazon Root CA 1', trust 0x00000000, policy 0x00000000","evidence":{"checks":4,"failures":0,"first_failure":"","depth":3,"trust":"0x00000000","policy":"0x00000000","policy_at":[0,0],"chain":[{"i":0,"subject":"CN=login.nvidia.com","issuer":"C=US, O=Amazon, CN=Amazon RS","not_after":"2027-02-18","trust":"0x00000000"},{"i":1,"subject":"C=US, O=Amazon, CN=Amazon RS","issuer":"C=US, O=Amazon, CN=Amazon Ro","not_after":"2030-08-23","trust":"0x00000000"},{"i":2,"subject":"C=US, O=Amazon, CN=Amazon Ro","issuer":"C=US, ST=Arizona, L=Scottsda","not_after":"2037-12-31","trust":"0x00000000"}]}}],"truncated":false}
-[rc=0 in 1.5s]
+{"generated_utc":"2026-11-03T12:09:37.607Z","count":16,"results":[{"name":"fec.vectors","status":"ok","gated":true,"ms":0,"checks":88,"failures":0,"reason":"all 88 known-answer checks passed","evidence":{"checks":88,"failures":0,"first_failure":"","vectors":"knfec_kat_vectors.h (tools/fec_reference.py)"}},{"name":"srtp.vectors","status":"ok","gated":true,"ms":0,"checks":52,"failures":0,"reason":"all 52 known-answer checks passed","evidence":{"checks":52,"failures":0,"first_failure":"","replay_ops":96,"replay_mismatches":0}},{"name":"input.vectors","status":"ok","gated":true,"ms":0,"checks":50,"failures":0,"reason":"all 50 known-answer checks passed","evidence":{"checks":50,"failures":0,"first_failure":"","vectors":"kn_input_kat_vectors.h (tools/input_reference.py)","chain":8}},{"name":"audio.vectors","status":"ok","gated":true,"ms":1,"checks":188,"failures":0,"reason":"all 188 audio-pipeline checks passed (kn_ogg framing + kn_arx SRTP/RED/seq vectors)","evidence":{"checks":188,"failures":0,"first_failure":"","vectors":"kn_ogg_kat_vectors.h + kn_arx_kat_vectors.h (tools/oggopus_reference.py, tools/arx_reference.py)"}},{"name":"clock.resolution","status":"ok","gated":true,"ms":18,"checks":3,"failures":0,"reason":"Sleep(1) mean 1.00 ms -> 1.00 ms after timeBeginPeriod(1); wall tick 1000 us -> 1000 us","evidence":{"checks":3,"failures":0,"first_failure":"","qpc_hz":1948310,"wall_tick_us_before":1000,"wall_tick_us_after":1000,"sleep1_ms_before":1.00,"sleep1_ms_after":1.00}},{"name":"console.host","status":"ok","gated":true,"ms":0,"checks":1,"failures":0,"reason":"ConEmu hook present (build 230724); ANSI not probeable (stdout redirected) — hook is the D1 evidence","evidence":{"checks":1,"failures":0,"first_failure":"","conemu_hk64":true,"conemu_hk32":false,"conemu_build":"230724","stdout_is_console":false,"vt_setconsolemode_ok":false,"vt_err":0,"attr_applied":"not_probed"}},{"name":"d3d.formats","status":"ok","gated":true,"ms":145,"checks":10,"failures":0,"reason":"D7 rung 1 available: NV12->X8R8G8B8 conversion ok, LINEAR caps, HAL+HWVP device ok; 1280x800@60 Hz; PCI 8086:2a42","evidence":{"checks":10,"failures":0,"first_failure":"","adapter":"8086:2a42","driver":"0x0008000f000a0b35","desc":"Intel(R) HD Graphics Family","mode":"1280x800@60","bb":"X8R8G8B8","modes":16,"hz60_at_res":1,"hwvp":"0x00000000","swvp":"0x00000000","fmt":{"nv12":1,"yuy2":1,"uyvy":1,"x8":1,"a8":1,"r5g6":1,"x1r5":0},"conv":{"nv12":1,"yuy2":1,"x8":1,"to_nv12":0},"srf_caps":"0x03000300","linear":1,"point":1,"imm":1,"one":1}},{"name":"d3d.present","status":"ok","gated":true,"ms":238,"checks":11,"failures":0,"reason":"R25 milestone 0 OK: 1280x720 NV12 DEFAULT fill verified, StretchRect+Present x30, present mean 0.44 ms max 5.91 ms, fill mean 2.19 ms, pitch 1536","evidence":{"checks":11,"failures":0,"first_failure":"","ok":true,"iters":"30/30","pitch":1536,"video":"1280x720","screen":"1280x800","dest":"0,40,1280,760","fill_ms_mean":2.19,"fill_ms_max":30.33,"present_ms_mean":0.44,"present_ms_max":5.91,"filter":"linear","mismatches":0,"bytes_per_fill":1658880,"hrs":{"dev":"0x00000000","conv":"0x00000000","surf":"0x00000000","lock":"0x00000000","stretch":"0x00000000","present":"0x00000000","tcl":"0x00000000"},"seh":"0x00000000","seh_addr":"0x0000000000000000","degraded_latch":false}},{"name":"decode.synthetic","status":"ok","gated":true,"ms":21,"checks":5,"failures":0,"reason":"60 frames 320x240 at 3333.3 fps, cpu 178% of one core, worst frame 1 ms (libavcodec 63.2.100 (threads=1))","evidence":{"backend":"libavcodec 63.2.100 (threads=1)","clip":"<embedded 42912 B>","rc":0,"frames":60,"failed":0,"cb_frames":60,"width":320,"height":240,"fps":3333.3,"cpu_pct_of_core":177.8,"decode_ms_max":1,"wall_ms":18}},{"name":"gs.parse","status":"ok","gated":true,"ms":1,"checks":78,"failures":0,"reason":"all 78 known-answer checks passed","evidence":{"checks":78,"failures":0,"first_failure":"","vectors":"kn_gs_kat_vectors.h (tools/gs_reference.py)","capture":"none (stage 2 records real dumps)"}},{"name":"rx.vectors","status":"ok","gated":true,"ms":2,"checks":153,"failures":0,"reason":"all 153 receive-pipeline checks passed (scenarios 31/31, srtp256/gcm verified)","evidence":{"checks":153,"failures":0,"first_failure":"","vectors":"kn_rx_kat_vectors.h (tools/rx_reference.py)","scenarios_passed":31,"scenarios_total":31,"srtp_backend":1}},{"name":"sock.loopback","status":"ok","gated":true,"ms":54,"checks":9,"failures":0,"reason":"UDP loopback OK: 64/64 datagrams byte-exact (burst 2 ms), timeout 49 ms, rcvbuf 262144 B applied (req 262144 B)","evidence":{"checks":9,"failures":0,"first_failure":"","burst_got":64,"burst_mismatch":0,"burst_ms":2,"timeout_ms":49,"rcvbuf_req":262144,"rcvbuf_act":262144,"port_a":52499,"port_b":52500}},{"name":"net.dns","status":"ok","gated":true,"ms":42,"checks":3,"failures":0,"reason":"3/3 hosts resolve; login.nvidia.com -> 52.47.194.248 (A=3, AAAA=0, 19 ms)","evidence":{"checks":3,"failures":0,"first_failure":"","hosts":[{"host":"login.nvidia.com","rc":0,"a":3,"aaaa":0,"v4":"52.47.194.248","ms":19},{"host":"prod.cloudmatchbeta.nvidiagrid.net","rc":0,"a":6,"aaaa":0,"v4":"80.250.98.36","ms":6},{"host":"stun.l.google.com","rc":0,"a":1,"aaaa":0,"v4":"74.125.250.129","ms":16}]}},{"name":"net.tcp443","status":"ok","gated":true,"ms":71,"checks":3,"failures":0,"reason":"TCP/443 open to 2/2 NVIDIA endpoints + baseline (login 13.37.58.205 in 43 ms)","evidence":{"checks":3,"failures":0,"first_failure":"","hosts":[{"host":"login.nvidia.com","rc":0,"wsa":0,"peer":"13.37.58.205","ms":43},{"host":"prod.cloudmatchbeta.nvidiagrid.net","rc":0,"wsa":0,"peer":"80.250.98.39","ms":11},{"host":"www.cloudflare.com","rc":0,"wsa":0,"peer":"104.16.123.96","ms":13}]}},{"name":"net.tls","status":"ok","gated":false,"ms":584,"checks":3,"failures":0,"reason":"mbedTLS TLS verified on all 3 hosts: login TLSv1 cipher 128-bit, leaf 'CN=login.nvidia.com'","evidence":{"checks":3,"failures":0,"first_failure":"","hosts":[{"host":"login.nvidia.com","rc":0,"sec":"0x00000000","proto":"TLSv1.2","cipher_bits":128,"leaf":"CN=login.nvidia.com"},{"host":"prod.cloudmatchbeta.nvidiagrid.net","rc":0,"sec":"0x00000000","proto":"TLSv1.2","cipher_bits":256,"leaf":"C=US, ST=California, L=Santa Cla"},{"host":"www.cloudflare.com","rc":0,"sec":"0x00000000","proto":"TLSv1.2","cipher_bits":256,"leaf":"CN=www.cloudflare.com"}]}},{"name":"tls.chain","status":"ok","gated":false,"ms":223,"checks":4,"failures":0,"reason":"login.nvidia.com chain clean: depth 3, root 'C=US, O=Amazon, CN=Amazon Root CA 1', trust 0x00000000, policy 0x00000000","evidence":{"checks":4,"failures":0,"first_failure":"","depth":3,"trust":"0x00000000","policy":"0x00000000","policy_at":[0,0],"chain":[{"i":0,"subject":"CN=login.nvidia.com","issuer":"C=US, O=Amazon, CN=Amazon RS","not_after":"2027-02-18","trust":"0x00000000"},{"i":1,"subject":"C=US, O=Amazon, CN=Amazon RS","issuer":"C=US, O=Amazon, CN=Amazon Ro","not_after":"2030-08-23","trust":"0x00000000"},{"i":2,"subject":"C=US, O=Amazon, CN=Amazon Ro","issuer":"C=US, ST=Arizona, L=Scottsda","not_after":"2037-12-31","trust":"0x00000000"}]}}],"truncated":false}
+[rc=0 in 1.6s]
 PASS --selftest=all exit 0 (gated policy) + JSON
 
 --- self-test verdicts ---
@@ -551,18 +551,18 @@ PASS --selftest=all exit 0 (gated policy) + JSON
   srtp.vectors      ok          0ms  checks=52   all 52 known-answer checks passed
   input.vectors     ok          0ms  checks=50   all 50 known-answer checks passed
   audio.vectors     ok          1ms  checks=188  all 188 audio-pipeline checks passed (kn_ogg framing + kn_arx SRTP/RED/seq vecto
-  clock.resolution  ok         36ms  checks=3    Sleep(1) mean 2.88 ms -> 1.00 ms after timeBeginPeriod(1); wall tick 15600 us ->
+  clock.resolution  ok         18ms  checks=3    Sleep(1) mean 1.00 ms -> 1.00 ms after timeBeginPeriod(1); wall tick 1000 us -> 
   console.host      ok          0ms  checks=1    ConEmu hook present (build 230724); ANSI not probeable (stdout redirected) — hoo
-  d3d.formats       ok        103ms  checks=10   D7 rung 1 available: NV12->X8R8G8B8 conversion ok, LINEAR caps, HAL+HWVP device 
-  d3d.present       ok        179ms  checks=11   R25 milestone 0 OK: 1280x720 NV12 DEFAULT fill verified, StretchRect+Present x30
-  decode.synthetic  ok         26ms  checks=5    60 frames 320x240 at 2608.7 fps, cpu 135% of one core, worst frame 1 ms (libavco
+  d3d.formats       ok        145ms  checks=10   D7 rung 1 available: NV12->X8R8G8B8 conversion ok, LINEAR caps, HAL+HWVP device 
+  d3d.present       ok        238ms  checks=11   R25 milestone 0 OK: 1280x720 NV12 DEFAULT fill verified, StretchRect+Present x30
+  decode.synthetic  ok         21ms  checks=5    60 frames 320x240 at 3333.3 fps, cpu 178% of one core, worst frame 1 ms (libavco
   gs.parse          ok          1ms  checks=78   all 78 known-answer checks passed
   rx.vectors        ok          2ms  checks=153  all 153 receive-pipeline checks passed (scenarios 31/31, srtp256/gcm verified)
-  sock.loopback     ok         58ms  checks=9    UDP loopback OK: 64/64 datagrams byte-exact (burst 1 ms), timeout 54 ms, rcvbuf 
-  net.dns           ok         41ms  checks=3    3/3 hosts resolve; login.nvidia.com -> 52.47.194.248 (A=3, AAAA=0, 6 ms)
-  net.tcp443        ok         88ms  checks=3    TCP/443 open to 2/2 NVIDIA endpoints + baseline (login 15.236.196.144 in 54 ms)
-  net.tls           ok        580ms  checks=3    mbedTLS TLS verified on all 3 hosts: login TLSv1 cipher 128-bit, leaf 'CN=login.
-  tls.chain         ok        232ms  checks=4    login.nvidia.com chain clean: depth 3, root 'C=US, O=Amazon, CN=Amazon Root CA 1
+  sock.loopback     ok         54ms  checks=9    UDP loopback OK: 64/64 datagrams byte-exact (burst 2 ms), timeout 49 ms, rcvbuf 
+  net.dns           ok         42ms  checks=3    3/3 hosts resolve; login.nvidia.com -> 52.47.194.248 (A=3, AAAA=0, 19 ms)
+  net.tcp443        ok         71ms  checks=3    TCP/443 open to 2/2 NVIDIA endpoints + baseline (login 13.37.58.205 in 43 ms)
+  net.tls           ok        584ms  checks=3    mbedTLS TLS verified on all 3 hosts: login TLSv1 cipher 128-bit, leaf 'CN=login.
+  tls.chain         ok        223ms  checks=4    login.nvidia.com chain clean: depth 3, root 'C=US, O=Amazon, CN=Amazon Root CA 1
 PASS fec.vectors ok in the target binary
 PASS srtp.vectors ok in the target binary
 PASS gs.parse ok in the target binary
@@ -577,13 +577,13 @@ PASS d3d.formats verdict usable (D7): ok
   d3d.formats reason: D7 rung 1 available: NV12->X8R8G8B8 conversion ok, LINEAR caps, HAL+HWVP device ok; 1280x800@60 Hz; PCI 8086:2a42
 PASS d3d.present executed on Win32 (status=ok)
 PASS d3d.present verdict usable (D7): ok
-  d3d.present reason: R25 milestone 0 OK: 1280x720 NV12 DEFAULT fill verified, StretchRect+Present x30, present mean 0.34 ms max 5.47 ms, fill mean 2.19 ms, pitch 1536
+  d3d.present reason: R25 milestone 0 OK: 1280x720 NV12 DEFAULT fill verified, StretchRect+Present x30, present mean 0.44 ms max 5.91 ms, fill mean 2.19 ms, pitch 1536
 PASS console.host not failed (D1): ok
 PASS net.dns executed on Win32 (status=ok)
-  net.dns reason: 3/3 hosts resolve; login.nvidia.com -> 52.47.194.248 (A=3, AAAA=0, 6 ms)
+  net.dns reason: 3/3 hosts resolve; login.nvidia.com -> 52.47.194.248 (A=3, AAAA=0, 19 ms)
 PASS net.dns usable verdict: ok
 PASS net.tcp443 executed on Win32 (status=ok)
-  net.tcp443 reason: TCP/443 open to 2/2 NVIDIA endpoints + baseline (login 15.236.196.144 in 54 ms)
+  net.tcp443 reason: TCP/443 open to 2/2 NVIDIA endpoints + baseline (login 13.37.58.205 in 43 ms)
 PASS net.tcp443 usable verdict: ok
 PASS net.tls executed on Win32 (status=ok)
   net.tls reason: mbedTLS TLS verified on all 3 hosts: login TLSv1 cipher 128-bit, leaf 'CN=login.nvidia.com'
@@ -594,14 +594,14 @@ PASS net.tls evidence carries per-host handshake results
 PASS no stubs left: 0 skipped (platform/ffmpeg only)
 PASS decode.synthetic executed (status=ok)
 PASS decode.synthetic ok — 60/60 embedded frames (status=ok)
-  decode.synthetic reason: 60 frames 320x240 at 2608.7 fps, cpu 135% of one core, worst frame 1 ms (libavcodec 63.2.100 (threads=1))
+  decode.synthetic reason: 60 frames 320x240 at 3333.3 fps, cpu 178% of one core, worst frame 1 ms (libavcodec 63.2.100 (threads=1))
 
 === diagnostic bundle ===
 
 $ C:\Users\KarnyJohnny\Desktop\KarnyNow\build\knvstd.exe --diagnostics --log-dir=logs/t10
-{"bundle":"logs/t10/diag-20261103T110344Z-7ace830c.zip"}
+{"bundle":"logs/t10/diag-20261103T120937Z-3c49a1ef.zip"}
 [rc=0 in 0.2s]
-PASS bundle written: C:\Users\KarnyJohnny\Desktop\KarnyNow\logs/t10/diag-20261103T110344Z-7ace830c.zip
+PASS bundle written: C:\Users\KarnyJohnny\Desktop\KarnyNow\logs/t10/diag-20261103T120937Z-3c49a1ef.zip
 PASS zip CRCs valid (testzip)
 PASS summary.json is the first entry
 PASS bundle contains build.json
@@ -616,13 +616,13 @@ PASS build.json records TLS backend mbedtls
 PASS build.json extras record the FFmpeg prefix
 PASS summary.json trigger recorded
 PASS summary: within cap
-PASS bundle size 275380 B <= 8 MiB
+PASS bundle size 411037 B <= 8 MiB
 
 === jsonl validation ===
 
 $ C:\Python\Python38\python.exe C:\Users\KarnyJohnny\Desktop\KarnyNow\tools\check_jsonl.py logs/t10
 JSONL VALIDATION PASS: 0 line(s) in 2 file(s), all valid
-[rc=0 in 1.1s]
+[rc=0 in 1.9s]
 PASS check_jsonl over logs/t10
 
 === PE check ===
@@ -630,5 +630,5 @@ PASS knvstd.exe SubsystemVersion == 6.01 (got (6, 1))
 
 ============================================================
 T10 VERDICT: ALL PASS (89 checks)
-bundle: C:\Users\KarnyJohnny\Desktop\KarnyNow\logs/t10/diag-20261103T110344Z-7ace830c.zip
+bundle: C:\Users\KarnyJohnny\Desktop\KarnyNow\logs/t10/diag-20261103T120937Z-3c49a1ef.zip
 logs:   C:\Users\KarnyJohnny\Desktop\KarnyNow\logs/t10
